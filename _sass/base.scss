@@ -1,0 +1,71 @@
+::selection {
+  color: lighten($color, 10%);
+  background: lighten($background, 5%);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $background;
+  color: $color;
+  font-family: $body-font;
+  font-size: 16px;
+  margin: 0 auto;
+  // padding: 2em;
+  max-width: $content-width;
+  @include media-query($on-phone) {
+    padding: 1.5em 1em;
+  }
+}
+
+img#welcome {
+  vertical-align: sub;
+}
+
+h1, h2, h3, h4 {
+  font-family: $header-font;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h1 svg {
+  vertical-align: sub;
+}
+
+h4 {
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: $content-width*.69;
+  line-height: 1.5em;
+
+  &.lead {
+    font-size: 1.5rem;
+  }
+}
+
+svg {
+  vertical-align: middle;
+}
+
+hr {
+  border: none;
+  height: 6px;
+  background: currentColor;
+  mask-image: url(../media/squiggly.svg);
+  -webkit-mask-image: url(../media/squiggly.svg);
+  opacity: .75;
+  margin: 2em 0;
+}

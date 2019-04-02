@@ -1,0 +1,23 @@
+# Metadata
+title: "My Magical Blog!"
+description: "A cool thing made with Glitch"
+keywords: ["glitch", "jekyll"]
+
+# Third party services
+# (Anything you put here will be public!)
+google-analytics: 
+
+# Build settings
+encoding: utf-8
+markdown: kramdown
+exclude:
+  - .sass-cache/
+  - node_modules/
+  - .gitignore
+  - Gemfile
+  - _config.yml
+  - glitch.json
+  - package.json
+  - package-lock.json
+  - watch.json
+  - "*.save.*"

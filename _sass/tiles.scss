@@ -1,0 +1,62 @@
+tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, $spacing-unit [col-start]);
+  grid-auto-columns: $spacing-unit;
+  grid-auto-rows: $spacing-unit;
+  grid-auto-flow: row dense;
+  tile {
+    grid-column: auto / span 5;
+    grid-row: auto / span 5;
+    display: flex;
+    padding: $spacing-unit;
+    margin-right: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px lightgray;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    transition: transform 150ms ease-in, box-shadow 150ms linear;
+    h3 {
+      align-self: flex-end;
+      font-size: 24px;
+      margin: 0;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); // , 0 2px 2px rgba(0, 0, 0, 0.55);
+      span {
+        // from https://wesbos.com/css-highlight-animation/
+        position: relative;
+        display: inline;
+        background-image: linear-gradient(to right, transparent, blue);
+        background-position: 0;
+        // make the background twice as big
+        background-size: 200%;
+        transition: background 450ms ease;
+        transform: translateZ(0px);
+        padding-right: .5ch;
+      }
+    }
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 10px 20px darken(lightgray, 10%);
+      h3 span {
+        background-position: -100%;
+      }
+    }
+  }
+}
+
+.squiddo {
+  position: relative;
+  &:before {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    top: -8%;
+    left: 5%;
+    content: " ";
+    background-image: url(/media/squiddo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  h3 {
+    position: relative;
+  }
+}

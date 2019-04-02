@@ -1,0 +1,8 @@
+{
+  "restart": {
+    "include": [
+      "."
+    ]
+  },
+  "throttle": 3000
+}

@@ -1,0 +1,30 @@
+---
+title: "Welcome to melody.dev!!1!"
+layout: default
+---
+
+<h1 id="welcome">
+  Hey hi, I’m <yeet>Melody</yeet> ~
+</h1>
+
+<p class="lead">
+  I’m an interactive web developer, designer, and storyteller. <br> Here's a taste of what I do →
+</p>
+
+<tiles>
+  {% for tile in site.data.pages %}
+    <tile class="bg-{{ tile.accent }} {{ tile.class }}" style="
+      grid-column: auto / span calc({{ tile.width }} + 1 {% if tile.left %}+ {{ tile.left }}{% endif %});
+      grid-row: auto / span calc({{ tile.height }} + 1 {% if tile.top %}+ {{ tile.top}}{% endif %});
+      {% if tile.left %}margin-left: calc(40px * {{ tile.left }});{% endif %}
+      {% if tile.top %}margin-top: calc(40px * {{ tile.top }});{% endif %}
+      {% if tile.feature %}background-image: url({{ tile.feature }}); background-size: cover; background-position: center;{% endif %}
+    ">
+      <h3><span title="{{ tile.title }}" style="background-image: linear-gradient(to right, transparent 50%, {{ tile.accent }} 90%);
+">{{ tile.title }}</span></h3>
+    </tile>
+  {% endfor %}
+</tiles>
+
+<br>
+<hr>

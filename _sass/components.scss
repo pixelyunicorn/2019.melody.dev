@@ -1,0 +1,29 @@
+yeet {
+  display: inline-block;
+  background: white;
+  background: linear-gradient(to bottom right, #D99AB5, #A054B1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+project {
+  img {
+    display: block;
+    max-width: 200px;
+    margin-top: 1em;
+  }
+}
+
+talk {
+  display: block;
+  padding: 0 1em 1em;
+  margin-bottom: 1em;
+  border-radius: $border-radius;
+  border: 2px solid rgba($color, .25);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  @include media-query($on-tablet) {
+    background-image: none !important;
+  }
+}

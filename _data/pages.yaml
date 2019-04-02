@@ -1,0 +1,65 @@
+- title: Guru
+  accent: teal
+  width: 5
+  height: 5
+  left: 1
+  top: 1
+  feature: "/media/guru.png"
+- title: "Making music in React"
+  accent: blue
+  width: 5
+  height: 10
+  top: 2
+  feature: "/media/react-music.png"
+- title: "Campus transit guides"
+  accent: purple
+  width: 5
+  height: 7
+  feature: "/media/campus-transit.png"
+- title: "Subway countdown clocks"
+  accent: orange
+  width: 5
+  height: 5
+  top: 2
+  feature: "/media/countdown-clocks.png"
+- title: "Splatoon 2 Streaming"
+  accent: purple
+  width: 5
+  height: 5
+  feature: "/media/splatoon.png"
+  class: "squiddo"
+- title: "Spook your friends w/ Electron"
+  accent: teal
+  width: 6
+  height: 6
+  feature: "/media/spook-electron.png"
+- title: "CodeDay: 24 hours of fun"
+  accent: red
+  width: 6
+  height: 6
+  feature: "/media/codeday.png"
+- title: "Build your first Jekyll website"
+  accent: red
+  width: 11
+  height: 5
+  feature: "/media/jekyll.png"
+# - title: "Hackathon projects"
+#   accent: orange
+#   width: 10
+#   height: 5
+#   left: 1
+# - title: "Musical package managers"
+#   accent: red
+#   left: 0
+#   width: 6
+#   height: 8
+# - title: "TacoJS"
+#   accent: purple
+#   width: 5
+#   height: 7
+#   feature: "/media/tacojs.png"
+# - title: "Everfree Northwest"
+#   accent: green
+#   left: 0
+#   width: 6
+#   height: 6

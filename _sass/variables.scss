@@ -1,0 +1,38 @@
+/* Spaces */
+
+$spacing-unit: 40px;
+
+$content-width: 1280px;
+
+$on-phone: 600px;
+$on-tablet: 960px;
+
+$border-radius: 8px;
+
+/* Fonts */
+$header-font: basic-sans, "Helvetica Neue", helvetica, arial, sans-serif;
+$body-font: ff-tisa-web-pro, basic-sans, "Helvetica Neue", helvetica, arial, sans-serif;
+
+/* Colors */
+// $background: #331e3e;
+// $color: #ecd1fa;
+
+$background: #f2f2f2;
+$color: #331e3e;
+
+$uno: #f075c7;
+$duo: #f0d175;
+$tre: #75f0db;
+
+$colors-list:
+  ("red", #DA5F6E),
+  ("blue", #5F67DA),
+  ("purple", #763E94),
+  ("orange", #F09103),
+  ("teal", #2F6376),
+  ("green", #1B8C5A);
+
+/* Etc */
+
+$transition: 350ms ease-in-out;
+$transition-linear: 350ms linear;
