@@ -1,0 +1,11 @@
+nav {
+  position: absolute;
+  z-index: 420;
+  padding: 2em 0;
+  @include media-query($on-phone) {
+    position: relative;
+    background: $color;
+    padding: 1em 0 .5em;
+    text-align: center;
+  }
+}

@@ -2,7 +2,8 @@
 
 $spacing-unit: 40px;
 
-$content-width: 1280px;
+$container-width: 1280px;
+$content-width: 640px; // $container-width * 69;
 
 $on-phone: 600px;
 $on-tablet: 960px;
@@ -10,13 +11,10 @@ $on-tablet: 960px;
 $border-radius: 8px;
 
 /* Fonts */
-$header-font: basic-sans, "Helvetica Neue", helvetica, arial, sans-serif;
-$body-font: ff-tisa-web-pro, basic-sans, "Helvetica Neue", helvetica, arial, sans-serif;
+$header-font: "Basic Sans", basic-sans, "Helvetica Neue", helvetica, arial, sans-serif;
+$body-font: "Tisa Pro", ff-tisa-web-pro, basic-sans, "Helvetica Neue", helvetica, arial, sans-serif;
 
 /* Colors */
-// $background: #331e3e;
-// $color: #ecd1fa;
-
 $background: #f2f2f2;
 $color: #331e3e;
 

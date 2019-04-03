@@ -1,0 +1,43 @@
+.feature {
+  position: relative;
+  display: inline-block;
+
+  margin-bottom: -3em;
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  tiles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    tile {
+      background: none;
+      text-align: left;
+      border: 8px solid rgba(255, 255, 255, .5);
+      box-shadow: 0 0 18px rgba(0, 0, 0, .25);
+      border-radius: $border-radius*3;
+      margin-right: 0;
+      margin-bottom: 0;
+      transition: all 400ms ease;
+      &:hover {
+        border-color: white;
+      }
+    }
+  }
+}
+p.metadata {
+  margin-top: -2em;
+  font-style: italic;
+}
+// feature {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+//   grid-template-rows: repeat(auto-fill, minmax(40px, 1fr));
+//   grid-auto-flow: row dense;
+// }

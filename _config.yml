@@ -1,11 +1,17 @@
 # Metadata
-title: "My Magical Blog!"
-description: "A cool thing made with Glitch"
-keywords: ["glitch", "jekyll"]
+title: "Melody Starling!"
+description: "I’m an interactive web developer, designer, and storyteller. Here's something cool I made!"
+keywords: ["web developer", "designer", "jekyll"]
 
 # Third party services
 # (Anything you put here will be public!)
-google-analytics: 
+google-analytics:
+
+# Rubygems
+# (The ones used for this site breaks GitHub Pages)
+plugins:
+  - jekyll-auto-image
+  - jekyll-postfiles
 
 # Build settings
 encoding: utf-8
@@ -21,3 +27,6 @@ exclude:
   - package-lock.json
   - watch.json
   - "*.save.*"
+
+# Permalinks
+permalink: /:title/

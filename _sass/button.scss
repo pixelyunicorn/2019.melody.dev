@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  font-family: $header-font;
   border-radius: $border-radius;
   border: 1px solid;
   margin: 0 .5rem .5rem 0;
@@ -11,5 +12,8 @@
   &:disabled, &.disabled {
     pointer-events: none;
     opacity: .3333333333333333333333333333333333333333333333333333333;
+  }
+  svg {
+    vertical-align: bottom;
   }
 }

@@ -27,3 +27,13 @@ talk {
     background-image: none !important;
   }
 }
+
+article {
+  padding-top: 2em;
+}
+
+.construction {
+  background: lighten($duo, 10%);
+  padding: 1em;
+  border-radius: $border-radius;
+}

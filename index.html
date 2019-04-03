@@ -1,6 +1,6 @@
 ---
 title: "Welcome to melody.dev!!1!"
-layout: default
+layout: page
 ---
 
 <h1 id="welcome">
@@ -11,20 +11,25 @@ layout: default
   I’m an interactive web developer, designer, and storyteller. <br> Here's a taste of what I do →
 </p>
 
+
+{% assign sorted_posts = site.posts | sort: "tile.order" %}
+
 <tiles>
-  {% for tile in site.data.pages %}
-    <tile class="bg-{{ tile.accent }} {{ tile.class }}" style="
-      grid-column: auto / span calc({{ tile.width }} + 1 {% if tile.left %}+ {{ tile.left }}{% endif %});
-      grid-row: auto / span calc({{ tile.height }} + 1 {% if tile.top %}+ {{ tile.top}}{% endif %});
-      {% if tile.left %}margin-left: calc(40px * {{ tile.left }});{% endif %}
-      {% if tile.top %}margin-top: calc(40px * {{ tile.top }});{% endif %}
-      {% if tile.feature %}background-image: url({{ tile.feature }}); background-size: cover; background-position: center;{% endif %}
-    ">
-      <h3><span title="{{ tile.title }}" style="background-image: linear-gradient(to right, transparent 50%, {{ tile.accent }} 90%);
-">{{ tile.title }}</span></h3>
+  {% for post in sorted_posts %}
+    <tile class="bg-{{ post.accent }} {{ post.tile.class }}" style="
+      grid-column: auto / span calc({{ post.tile.width }} + 1 {% if post.tile.left %}+ {{ post.tile.left }}{% endif %});
+      grid-row: auto / span calc({{ post.tile.height }} + 1 {% if post.tile.top %}+ {{ post.tile.top}}{% endif %});
+      {% if post.tile.left %}margin-left: calc(40px * {{ post.tile.left }});{% endif %}
+      {% if post.tile.top %}margin-top: calc(40px * {{ post.tile.top }});{% endif %}
+      {% if post.tile.image %}background-image: url({{ post.tile.image | prepend: post.url }}); background-size: cover; background-position: center;{% endif %} cursor: pointer;
+    " onclick="document.location='{{ post.url }}';return false;" >
+      <h3><span title="{{ post.title }}" style="background-image: linear-gradient(to right, transparent 50%, {{ post.accent }} 90%);
+      ">{{ post.title }}</span></h3>
     </tile>
   {% endfor %}
 </tiles>
 
 <br>
 <hr>
+
+{% include construction.html %}

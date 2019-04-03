@@ -1,0 +1,63 @@
+---
+layout: default
+---
+{% include navigation.html %}
+<header class="bg-{{ page.accent }} {{ page.class }}">
+    <span id="top"></span>
+    {% if page.feature %}
+    <div class="feature hidden-phone">
+      <img src="{{ page.feature.image | prepend: page.url }}" alt=""/>
+      <tiles style="
+          grid-template-columns: repeat({{ page.feature.width }}, 1fr);
+          grid-template-rows: repeat({{ page.feature.height }}, 1fr);
+          ">
+        <tile style="
+          grid-column: {{ page.feature.width | minus: page.tile.width | divided_by: 2 | plus: 1 }} / span {{ page.tile.width }};
+          grid-row: {{ page.feature.height | minus: page.tile.height | divided_by: 2 | plus: 1 }} / span {{ page.tile.height }};
+        ">
+          <h2>{{ page.title }}</h2>
+        </tile>
+      </tiles>
+    </div>
+    <div class="visible-phone">
+      <h2>{{ page.title }}</h2>
+      <img src="{{ page.feature.image | prepend: page.url }}" alt=""/>
+    </div>
+    {% else %}
+    <h1>{{ page.title }}</h1>
+    {% endif %}
+    <p class="metadata">
+      Published {{ page.date | date: "%B %-d, %Y" }} •
+      {% include read-time.html %} read
+    </p>
+</header>
+<section id="main">
+  <container width="content-width">
+    <article>
+      {% include construction.html %}
+{{ content }}
+    </article>
+  </container>
+</section>
+<section id="plug">
+  <container width="content-width">
+    <hr>
+    <h3>About Melody</h3>
+        <img src="/media/avatar.png" alt="Photo of Melody!" width="100" height="100" title="Melody says woomy!" style="float: left; margin-right: 1ch"/>
+        <p>
+          Melody is a web developer, designer, and community event organizer based in Philly. You can find them on Twitter at <a class="uno" href="https://twitter.com/pixelyunicorn" target="_blank"><img src="https://icon.now.sh/twitter/1da1f2" height="12" width="12" /> @pixelyunicorn </a>.
+        </p>
+        <!-- <p>
+          Edit on GitHub: {{ page.path }}
+        </p> -->
+    <h3>More Posts</h3>
+    <p class="page-nav">
+      {% if page.previous.url %}
+        <a class="prev uno button" href="{{page.previous.url}}">← {{page.previous.title}}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a class="next uno button" href="{{page.next.url}}">{{page.next.title}} →</a>
+      {% endif %}
+    </p>
+  </container>
+</section>

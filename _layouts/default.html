@@ -14,8 +14,19 @@
     <!-- import the webpage's javascript file -->
     <!-- i know i'm a javascript developer, but i forgot to use it for some reason... -->
     <!-- <script src="/script.js" defer></script> -->
+
+    <!-- twitter card -->
+    <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
+    <meta name="twitter:site" content="@pixelyunicorn">
+    <meta name="twitter:creator" content="@pixelyunicorn">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
+    {% if page.image %}
+    <meta name="twitter:image:src" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
   </head>
   <body>
+    <span id="top"></span>
 {{ content }}
   </body>
 </html>

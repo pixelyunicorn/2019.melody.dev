@@ -1,0 +1,11 @@
+header {
+  background: $color;
+  color: $background;
+  padding: 1px 0; // fix IE layout issue
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); 
+  p {
+    text-align: center;
+    margin: 1em auto 2em;
+  }
+}

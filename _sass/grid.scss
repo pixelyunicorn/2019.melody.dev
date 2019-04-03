@@ -1,23 +1,24 @@
 // Content Wrapper
 container {
   display: block;
-  width: 100%;
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  // width: 100%;
+  // max-width: -webkit-calc(#{$container-width} - (#{$spacing-unit} * 2));
+  // max-width: calc(#{$container-width} - (#{$spacing-unit} * 2));
+  max-width: #{$container-width};
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
 
   clear: both;
+  box-sizing: content-box;
 
   @include media-query($on-tablet) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} / 3));
-    max-width: calc(#{$content-width} - (#{$spacing-unit} / 3));
+    // max-width: -webkit-calc(#{$container-width} - (#{$spacing-unit} / 3));
+    // max-width: calc(#{$container-width} - (#{$spacing-unit} / 3));
     padding-right: $spacing-unit / 3;
     padding-left: $spacing-unit / 3;
   }
-
 
   @include media-query($on-phone) {
     max-width: 100%;
@@ -26,20 +27,14 @@ container {
   }
 }
 
-container[width="small"] {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * .75));
-  max-width: calc(#{$content-width} - (#{$spacing-unit} * .75));
-}
-
-container[width="large"] {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2) + 5rem);
-  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2) + 5rem);
-}
-
 container[width="full"] {
   display: block;
   width: 100%;
   padding: 0 $spacing-unit;
+}
+
+container[width="content-width"] {
+  max-width: #{$content-width};
 }
 
 // Flexbox Helpers
@@ -273,5 +268,22 @@ grid, .grid {
     [phone-row-count="#{$i}"] {
       grid-template-rows: repeat(#{$i}, auto);
     }
+  }
+}
+
+// Responsive utilities
+.visible-phone {
+  display: none;
+}
+.hidden-phone {
+
+}
+
+@include media-query($on-phone) {
+  .visible-phone {
+    display: block;
+  }
+  .hidden-phone {
+    display: none!important;
   }
 }
