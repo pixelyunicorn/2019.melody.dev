@@ -5,31 +5,40 @@ layout: default
 <header class="bg-{{ page.accent }} {{ page.class }}">
     <span id="top"></span>
     {% if page.feature %}
-    <div class="feature hidden-phone">
+    <div class="feature hidden-tablet">
       <img src="{{ page.feature.image | prepend: page.url }}" alt=""/>
       <tiles style="
           grid-template-columns: repeat({{ page.feature.width }}, 1fr);
           grid-template-rows: repeat({{ page.feature.height }}, 1fr);
+          margin-top: -2em;
           ">
         <tile style="
           grid-column: {{ page.feature.width | minus: page.tile.width | divided_by: 2 | plus: 1 }} / span {{ page.tile.width }};
           grid-row: {{ page.feature.height | minus: page.tile.height | divided_by: 2 | plus: 1 }} / span {{ page.tile.height }};
         ">
-          <h2>{{ page.title }}</h2>
+          <h1>{{ page.title }}</h1>
         </tile>
       </tiles>
+      <p class="metadata">
+        Published {{ page.date | date: "%B %-d, %Y" }} •
+        {% include read-time.html %} read
+      </p>
     </div>
-    <div class="visible-phone">
-      <h2>{{ page.title }}</h2>
+    <div class="visible-tablet">
+      <h1>{{ page.title }}</h1>
+      <p class="metadata">
+        Published {{ page.date | date: "%B %-d, %Y" }} •
+        {% include read-time.html %} read
+      </p>
       <img src="{{ page.feature.image | prepend: page.url }}" alt=""/>
     </div>
     {% else %}
     <h1>{{ page.title }}</h1>
-    {% endif %}
     <p class="metadata">
       Published {{ page.date | date: "%B %-d, %Y" }} •
       {% include read-time.html %} read
     </p>
+    {% endif %}
 </header>
 <section id="main">
   <container width="content-width">

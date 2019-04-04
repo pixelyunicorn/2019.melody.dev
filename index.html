@@ -15,7 +15,7 @@ layout: page
 
 {% assign sorted_posts = site.posts | sort: "tile.order" %}
 
-<tiles>
+<tiles class="hidden-phone">
   {% for post in sorted_posts %}
     <tile class="bg-{{ post.accent }} {{ post.tile.class }}" style="
       grid-column: auto / span calc({{ post.tile.width }} + 1 {% if post.tile.left %}+ {{ post.tile.left }}{% endif %});
@@ -29,6 +29,20 @@ layout: page
     </tile>
   {% endfor %}
 </tiles>
+
+<blogroll class="visible-phone">
+  <h2>Recent Posts</h2>
+  <br>
+  {% for post in site.posts %}
+    <a href="{{ post.url }}" class="bg-{{ post.accent }}">
+      <h3>{{ post.title }}</h3>
+      <p class="metadata">
+        Published {{ post.date | date: "%B %-d, %Y" }} •
+        {% include read-time.html content=post.content %} read
+      </p>
+    </a>
+  {% endfor %}
+</blogroll>
 
 <br>
 <hr>

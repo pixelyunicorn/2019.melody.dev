@@ -28,6 +28,19 @@ talk {
   }
 }
 
+blogroll {
+  a {
+    display: block;
+    padding: 1px $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 2;
+    border-radius: $border-radius;
+    box-shadow: 0px 10px 20px lightgray;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    transition: transform 150ms ease-in, box-shadow 150ms linear;
+    text-decoration: none;
+  }
+}
+
 article {
   padding-top: 2em;
 }

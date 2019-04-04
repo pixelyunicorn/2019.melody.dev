@@ -287,3 +287,19 @@ grid, .grid {
     display: none!important;
   }
 }
+
+.visible-tablet {
+  display: none;
+}
+.hidden-tablet {
+
+}
+
+@include media-query($on-tablet) {
+  .visible-tablet {
+    display: block;
+  }
+  .hidden-tablet {
+    display: none!important;
+  }
+}
