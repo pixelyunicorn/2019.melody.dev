@@ -7,10 +7,11 @@ layout: page
   Hey hi, I’m <yeet>Melody</yeet> ~
 </h1>
 
+{% include construction.html %}
+
 <p class="lead">
   I’m an interactive web developer, designer, and storyteller. <br> Here's a taste of what I do →
 </p>
-
 
 {% assign sorted_posts = site.posts | sort: "tile.order" %}
 
@@ -31,5 +32,3 @@ layout: page
 
 <br>
 <hr>
-
-{% include construction.html %}
