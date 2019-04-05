@@ -30,7 +30,4 @@ exclude:
   - "*.save.*"
 
 # Permalinks
-collections:
-  posts:
-    output: true
-    permalink: /:name/
+permalink: /:name/
