@@ -25,6 +25,7 @@ layout: default
       </p>
     </div>
     <div class="visible-tablet">
+      <br class="hidden-phone">
       <h1>{{ page.title }}</h1>
       <p class="metadata">
         Published {{ page.date | date: "%B %-d, %Y" }} •
@@ -52,13 +53,13 @@ layout: default
   <container width="content-width">
     <hr>
     <h3>About Melody</h3>
-        <img src="/media/avatar.png" alt="Photo of Melody!" width="100" height="100" title="Melody says woomy!" style="float: left; margin-right: 1ch"/>
-        <p>
-          Melody is a web developer, designer, and community event organizer based in Philly. You can find them on Twitter at <a class="uno" href="https://twitter.com/pixelyunicorn" target="_blank"><img src="https://icon.now.sh/twitter/1da1f2" height="12" width="12" /> @pixelyunicorn </a>.
-        </p>
-        <!-- <p>
-          Edit on GitHub: {{ page.path }}
-        </p> -->
+    <img src="/media/avatar.png" alt="Photo of Melody!" width="100" height="100" title="Melody says woomy!" style="float: left; margin-right: 1ch"/>
+    <p>
+      Melody is a web developer, designer, and community event organizer based in Philly. You can find them on Twitter at <a class="uno" href="https://twitter.com/pixelyunicorn" target="_blank"><img src="https://icon.now.sh/twitter/1da1f2" height="12" width="12" /> @pixelyunicorn </a>.
+    </p>
+    <!-- <p>
+      Edit on GitHub: {{ page.path }}
+    </p> -->
     <h3>More Posts</h3>
     <p class="page-nav">
       {% if page.previous.url %}

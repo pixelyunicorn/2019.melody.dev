@@ -1,37 +1,117 @@
-the glitch witch who owns melody.dev
-=================
+# [melody.cool](https://melody.cool/), the new new new version!
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+Built with Jekyll and hosted on Netlify. (Note: this site is _not_ compatible with GitHub Pages.)
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+## Content Structure
 
-Find out more [about Glitch](https://glitch.com/about).
+| Directory |  |
+| --- | --- |
+| ````_posts/```` | List of projects, with assets inside of each folder. |
 
+### Blog Posts
 
-Our Project
-------------
+**Blog posts can be easily edited and managed online via http://prose.io/#pixelyunicorn/work or any other Jekyll-based content management system.**
 
-### ← README.md
+Put published posts in ````_work```` and unpublished posts in ````_drafts````.
 
-That's this file, where you can tell people what your cool website does and how you built it.
+The first part of the file starts & ends with three dashes. This is your yaml configuration.
 
-### ← index.html
+Then comes the markdown. Cheatsheet here: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-Where you'll write the content of your website. 
+````markdown
+---
+# Basic Metadata
+layout: post
+title: Splatoon 2 Streaming
+url: splatoon
+tags: work
+accent: purple
 
-### ← style.css
+# Tile Grid
+tile:
+  order: 5
+  width: 5
+  height: 5
+  image: tile.png
+  class: "squiddo"
 
-CSS files add styling rules to your content.
+# Featured Image Grid
+feature:
+  width: 17
+  height: 11
+  image: feature.png
 
-### ← script.js
+# Meta Preview
+image: meta-preview.png
+------
 
-If you're feeling fancy you can add interactivity to your site with JavaScript.
+You can start typing content here. <b>HTML is supported</b> and so is **markdown syntax.**
+Try to use bold text and refrain from using _italics_ whenever possible.
 
-### ← assets
+Below are your headers, use them sparingly.
 
-Drag in `assets`, like images or music, to add them to your project
+## Header 2
 
-Made by [Glitch](https://glitch.com/)
--------------------
+### Header 3
+
+Images are pretty easy.
+
+![Image description for screen readers go here: Fluffle Puff!](/media/guests/flufflepuff-avatar.png)
+
+So are links: [Click here for Google!](http://google.com/)
+
+> I am a quote
+> - Maud Pie
+
+You can make tables too, if you're inclined.
+
+| Column Header 1 | Column Header 2 |
+| -- | -- |
+| Hi! | You get the point |
+| Yo! | What's up? |
+
+Lists are easy, just number or bullet them appropriately, like this:
+
+- Item 1
+- Item 2
+
+1. Item 1
+2. Item 2
+
+You can embed anything by copying and pasting an embed code:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rMFWc_FMhqs"
+frameborder="0" allowfullscreen></iframe>
+
+````
+
+## Development Structure
+
+| Directory |  |
+| --- | --- |
+| ````_includes/```` | Contents of < head >, navigation, and footer., and additional components |
+| ````_layouts/```` | Page layout templates. |
+| ````_sass/```` | Partial stylesheets. Modify _site.scss for site styles. |
+| ````img/```` | Static assets necessary to display the site. |
+
+| File |  |
+| --- | --- |
+| ````404.html/```` | 404 page. Easter egg, maybe? |
+| ````CNAME```` | Sets up a CNAME record for the domain the site is on. |
+| ````_config.yml```` | Site settings and commonly used phrases.  |
+| ````_prose.yml```` | Configuration for [prose.io](http://prose.io/).  |
+| ````feed.xml```` | RSS feed for blog posts. |
+| ````robots.txt```` | Bot access settings, please change before deploying to production. |
+
+## Running the site locally
+
+Make sure you have ruby installed, then...
+
+````bash
+# install gems (first time only)
+bundle install
+
+# run server on localhost:4000. SCSS and page content compiled automatically on save.
+bundle exec jekyll serve --port 4000 --watch --incremental
+````
 
 \ ゜o゜)ノ

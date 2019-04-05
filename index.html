@@ -1,5 +1,5 @@
 ---
-title: "Welcome to melody.dev!!1!"
+title: "Made by Melody"
 layout: page
 ---
 
@@ -10,23 +10,22 @@ layout: page
 {% include construction.html %}
 
 <p class="lead">
-  I’m an interactive web developer, designer, and storyteller. <br> Here's a taste of what I do →
+  I’m an interactive web developer, designer, and storyteller. <br class="hidden-phone"> Here's a taste of what I do →
 </p>
 
 {% assign sorted_posts = site.posts | sort: "tile.order" %}
 
 <tiles class="hidden-phone">
   {% for post in sorted_posts %}
-    <tile class="bg-{{ post.accent }} {{ post.tile.class }}" style="
+    <a href="{{ post.url }}" class="tile bg-{{ post.accent }} {{ post.tile.class }}" style="
       grid-column: auto / span calc({{ post.tile.width }} + 1 {% if post.tile.left %}+ {{ post.tile.left }}{% endif %});
       grid-row: auto / span calc({{ post.tile.height }} + 1 {% if post.tile.top %}+ {{ post.tile.top}}{% endif %});
       {% if post.tile.left %}margin-left: calc(40px * {{ post.tile.left }});{% endif %}
       {% if post.tile.top %}margin-top: calc(40px * {{ post.tile.top }});{% endif %}
-      {% if post.tile.image %}background-image: url({{ post.tile.image | prepend: post.url }}); background-size: cover; background-position: center;{% endif %} cursor: pointer;
-    " onclick="document.location='{{ post.url }}';return false;" >
+      {% if post.tile.image %}background-image: url({{ post.tile.image | prepend: post.url }}); background-size: cover; background-position: center;{% endif %} cursor: pointer;">
       <h3><span title="{{ post.title }}" style="background-image: linear-gradient(to right, transparent 50%, {{ post.accent }} 90%);
       ">{{ post.title }}</span></h3>
-    </tile>
+    </a>
   {% endfor %}
 </tiles>
 
@@ -46,3 +45,5 @@ layout: page
 
 <br>
 <hr>
+
+This site is open source!

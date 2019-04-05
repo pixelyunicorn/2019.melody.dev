@@ -4,7 +4,8 @@ tiles {
   grid-auto-columns: $spacing-unit;
   grid-auto-rows: $spacing-unit;
   grid-auto-flow: row dense;
-  tile {
+  tile, & > a {
+    text-decoration: none;
     grid-column: auto / span 5;
     grid-row: auto / span 5;
     display: flex;
@@ -19,7 +20,7 @@ tiles {
       // margin-left: 0!important;
       // margin-top: 0!important;
     }
-    h3, h2 {
+    h1, h2, h3 {
       align-self: flex-end;
       margin: 0;
       text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); // , 0 2px 2px rgba(0, 0, 0, 0.55);

@@ -29,7 +29,7 @@ talk {
 }
 
 blogroll {
-  a {
+  & > a {
     display: block;
     padding: 1px $spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
