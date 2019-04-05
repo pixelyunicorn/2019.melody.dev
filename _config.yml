@@ -2,7 +2,7 @@
 title: "Melody Starling!"
 description: "I’m an interactive web developer, designer, and storyteller. Here's something cool I made!"
 keywords: ["web developer", "designer", "jekyll"]
-baseurl: "https://melody.cool"
+domain: "https://melody.cool"
 
 # Third party services
 # (Anything you put here will be public!)
@@ -30,4 +30,7 @@ exclude:
   - "*.save.*"
 
 # Permalinks
-permalink: /:title/
+collections:
+  posts:
+    output: true
+    permalink: /:name/

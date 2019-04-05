@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
     {% if page.image %}
-    <meta name="twitter:image:src" content="{{ page.image | prepend: page.url | prepend: site.baseurl }}">
+    <meta name="twitter:image:src" content="{{ page.image | prepend: page.url | prepend: site.domain }}">
     {% endif %}
   </head>
   <body>
