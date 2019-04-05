@@ -30,4 +30,4 @@ exclude:
   - "*.save.*"
 
 # Permalinks
-permalink: /:name/
+permalink: /:title/
