@@ -19,7 +19,7 @@
     <meta property="og:type" content="{% if page.image %}article{% else %}website{% endif %}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:url" content="{{ page.url | prepend: site.domain }">
+    <meta property="og:url" content="{{ page.url | prepend: site.domain }}">
     {% if page.image %}
     <meta property="og:image" content="{{ page.image | prepend: page.url | prepend: site.domain }">
     <meta property="og:article:author" content="Melody Starling">
