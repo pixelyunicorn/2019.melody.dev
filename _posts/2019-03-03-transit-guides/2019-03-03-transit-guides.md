@@ -15,10 +15,4 @@ feature:
 image: meta-preview.png
 ---
 
-Is it choo?
-
-Or is it choo choo?
-
-Maybe choo choo choo?
-
-The world may never know!
+I created a series of guides to help students find their way around campus.

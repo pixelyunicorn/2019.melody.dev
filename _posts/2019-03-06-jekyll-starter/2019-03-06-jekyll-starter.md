@@ -14,3 +14,11 @@ feature:
   image: feature.png
 image: meta-preview.png
 ---
+
+## Outline
+
+- Why static sites?
+- `Jekyll-Starter` project
+- Markdown
+- Liquid templating syntax
+- Content management systems
