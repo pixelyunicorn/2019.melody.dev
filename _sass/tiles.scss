@@ -54,7 +54,7 @@ tiles {
         &:after {
           transition: opacity 250ms linear 200ms, transform 250ms ease 200ms;
           opacity: 1;
-          transform: translateX(.5ch);
+          transform: translateX(.75ch);
         }
       }
     }
