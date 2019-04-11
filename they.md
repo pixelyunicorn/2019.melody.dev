@@ -3,7 +3,7 @@ title: "plural they/them"
 layout: page
 ---
 
-## {% include icons/welcome.svg size="42" %} I'm <yeet>Melody,</yeet> one of many in this brain!
+## {% include icons/welcome.svg size="38" %} I'm <yeet>Melody,</yeet> one of many in this brain!
 
 Here are some example sentences using my **plural they/them** pronouns, from <a href="http://pronoun.is/they/them" class="uno" target="_blank">pronoun.is</a>:
 
@@ -19,7 +19,7 @@ Here are some example sentences using my **plural they/them** pronouns, from <a 
 
 ---
 
-## {% include icons/member-add.svg size="42" %} <yeet>Plural!?</yeet>
+## {% include icons/member-add.svg size="38" %} <yeet>Plural!?</yeet>
 
 Yep, there's more than one of us in this brain! I highly reccomend reading <a href="https://freyasspirit.com/plurality-playbook/" class="uno" target="_blank">Google's Plurality Playbook</a> for context on understanding dissociative disorders, as well as plurality as a whole. Here are some of us you will be seeing around:
 
@@ -35,4 +35,4 @@ I go into a bit more detail in this <a href="https://twitter.com/pixelyunicorn/s
 
 ---
 
-<a href="/" class="button duo">← Back Home</a>
+<a href="/" class="button uno">← Back Home</a>
