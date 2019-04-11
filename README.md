@@ -1,4 +1,4 @@
-# [melody.cool](https://melody.cool/), the new new new version!
+# [melody.dev](https://melody.dev/), the new new new version!
 
 Built with Jekyll and hosted on Netlify. (Note: this site is _not_ compatible with GitHub Pages.)
 
