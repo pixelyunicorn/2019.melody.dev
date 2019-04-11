@@ -13,6 +13,7 @@ feature:
   height: 9
   image: feature.png
 image: meta-preview.png
+draft: true
 ---
 
 I created a series of guides to help students find their way around campus.

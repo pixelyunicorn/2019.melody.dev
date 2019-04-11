@@ -8,13 +8,14 @@ tile:
   order: 2
   width: 5
   height: 10
-  top: 2
+  top: 3
   image: tile.png
 feature:
   width: 17
   height: 14
   image: feature.png
 image: meta-preview.png
+draft: true
 ---
 
 I am working on a talk to be given at React meetups this summer. In the meantime, here's a (rough) otline:

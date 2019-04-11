@@ -45,6 +45,19 @@ layout: default
   <container width="content-width">
     <article>
       {% include construction.html %}
+      {% if page.draft == true %}
+        <p style="text-align: center; opacity: 0.5; margin-top: 2rem;">
+           {% include icons/welcome.svg size="128" %}
+        </p>
+        <h1 style="text-align: center; opacity: 0.5; margin-top: 0">
+          Nothing here yet!
+        </h1>
+        <p style="text-align: center; opacity: 0.5; margin-bottom: 3rem;">
+          <em>(I'm probably still writing content for this page. Please check back later.)</em>
+        </p>
+      {% else %}
+        {{ content }}
+      {% endif %}
     </article>
   </container>
 </section>
