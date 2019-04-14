@@ -44,8 +44,8 @@ layout: default
 <section id="main">
   <container width="content-width">
     <article>
-      {% include construction.html %}
       {% if page.draft == true %}
+        {% include construction.html %}
         <p style="text-align: center; opacity: 0.5; margin-top: 2rem;">
            {% include icons/welcome.svg size="128" %}
         </p>
