@@ -40,7 +40,7 @@ function share_on_mastodon(title, url, hashtags) {
     if (!hashtags)  var hashtags = null;
 
     // Tagging users, such as offical accounts or the author of the post
-    var author   = "@pixelyunicorn@computerfairi.es";
+    var author   = "@melody@computerfairi.es";
 
     // Create the Share URL
     // https://someinstance.tld/share?text=URL%20encoded%20text
