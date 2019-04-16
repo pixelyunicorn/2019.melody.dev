@@ -10,9 +10,9 @@ Built with Jekyll and hosted on Netlify. (Note: this site is _not_ compatible wi
 
 ### Blog Posts
 
-**Blog posts can be easily edited and managed online via http://prose.io/#pixelyunicorn/work or any other Jekyll-based content management system.**
+**Blog posts can be easily edited and managed online via http://prose.io/#pixelyunicorn/melody.dev or any other Jekyll-based content management system.**
 
-Put published posts in ````_work```` and unpublished posts in ````_drafts````.
+Put published posts in ````_posts```` and unpublished posts in ````_drafts````.
 
 The first part of the file starts & ends with three dashes. This is your yaml configuration.
 
