@@ -7,7 +7,6 @@ Built with Jekyll and hosted on Netlify. (Note: this site is _not_ compatible wi
 | Directory |  |
 | --- | --- |
 | ````_posts/```` | Public list of posts, with assets inside of each folder. |
-| ````_posty/```` | Unlisted list of posts, with assets inside of each folder. |
 
 ### Blog Posts
 
@@ -44,6 +43,10 @@ feature:
 
 # Meta Preview
 image: meta-preview.png
+
+# Various levels of hidden
+draft: true
+hidden: true
 ------
 
 You can start typing content here. <b>HTML is supported</b> and so is **markdown syntax.**
