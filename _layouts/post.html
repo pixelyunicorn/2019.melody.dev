@@ -10,7 +10,6 @@ layout: default
       <tiles style="
           grid-template-columns: repeat({{ page.feature.width }}, 1fr);
           grid-template-rows: repeat({{ page.feature.height }}, 1fr);
-          margin-top: -2em;
           ">
         <tile style="
           grid-column: {{ page.feature.width | minus: page.tile.width | divided_by: 2 | plus: 1 }} / span {{ page.tile.width }};
@@ -39,6 +38,7 @@ layout: default
       Published {{ page.date | date: "%B %-d, %Y" }} •
       {% include read-time.html %} read
     </p>
+    {% if page.image %}<img src="{{ page.image | prepend: page.url }}" />{% endif %}
     {% endif %}
 </header>
 <section id="main">
