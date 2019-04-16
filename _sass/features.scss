@@ -1,7 +1,7 @@
 .feature {
   position: relative;
   display: inline-block;
-
+  min-height: $spacing-unit*10;
   margin-bottom: -3em;
   img {
     width: 100%;
@@ -35,6 +35,13 @@
 p.metadata {
   margin-top: 0.5em;
   font-style: italic;
+  &.feature-above {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 // feature {
 //   display: grid;

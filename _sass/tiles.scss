@@ -4,6 +4,7 @@ tiles {
   grid-auto-columns: $spacing-unit;
   grid-auto-rows: $spacing-unit;
   grid-auto-flow: row dense;
+  justify-content: space-evenly;
   tile, & > a {
     text-decoration: none;
     grid-column: auto / span 5;

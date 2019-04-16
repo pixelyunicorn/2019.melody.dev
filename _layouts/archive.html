@@ -6,7 +6,38 @@ layout: page
 
 <hr>
 
-<blogroll>
+<style>
+{% capture tiles_style %}
+@import "variables";
+@import "mixins";
+
+{% for post in page.posts %}{% unless post.hidden %}
+  #tile-{{ post.slug }} {
+    grid-column: auto / span calc({{ post.tile.width }} + 1);
+    grid-row: auto / span calc({{ post.tile.height }} + 1);
+    {% if post.tile.image %}background-image: url({{ post.tile.image | prepend: post.url }}); background-size: cover; background-position: center;{% endif %}
+    cursor: pointer;
+    h3 span {
+      background-image: linear-gradient(to right, transparent 50%, lighten({{ post.accent }}, 15%) 90%);
+    }
+    @include media-query(1095px) {
+      grid-column: auto / span 7;
+      grid-row: auto / span 7;
+    }
+  }
+{% endunless %}{% endfor %}{% endcapture %}
+{{ tiles_style | scssify }}
+</style>
+
+<tiles class="hidden-phone">
+  {% for post in page.posts %}{% unless post.hidden %}
+    <a href="{{ post.url }}" id="tile-{{ post.slug }}" class="tile bg-{{ post.accent }} {{ post.tile.class }}">
+      <h3><span title="{{ post.title }}">{{ post.title }}</span></h3>
+    </a>
+  {% endunless %}{% endfor %}
+</tiles>
+
+<blogroll class="visible-phone">
   {% for post in page.posts %}{% unless post.hidden %}
     <a href="{{ post.url }}" class="bg-{{ post.accent }}">
       <h3>{{ post.title }}</h3>
