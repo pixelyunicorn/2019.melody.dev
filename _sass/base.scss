@@ -10,11 +10,26 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $background;
-  color: $color;
   font-family: $body-font;
   font-size: $font-size;
   margin: 0 auto;
+}
+
+body, body.force-light-mode {
+  background: $background;
+  color: $color;
+}
+
+body.force-dark-mode {
+  background: $color;
+  color: #ecd1fa; // $background;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: $color;
+    color: #ecd1fa; // $background;
+  }
 }
 
 img#welcome {
@@ -78,4 +93,10 @@ hr {
   -webkit-mask-image: url(../media/squiggly.svg);
   opacity: .75;
   margin: 2em 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none!important;
+  }
 }

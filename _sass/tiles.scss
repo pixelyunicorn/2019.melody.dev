@@ -61,6 +61,16 @@ tiles {
     }
   }
 }
+body.force-dark-mode {
+  tiles > a {
+    box-shadow: none!important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  tiles > a {
+    box-shadow: none!important;
+  }
+}
 
 .squiddo {
   position: relative;
