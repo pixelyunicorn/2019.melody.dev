@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Making Music in React
-url: react-music
-tags: talk, reactjs
+tags: ['html', 'css']
 accent: blue
 tile:
   order: 2

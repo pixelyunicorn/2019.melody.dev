@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Build Your First Jekyll Website
 tags: work
 accent: red

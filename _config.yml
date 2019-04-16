@@ -7,10 +7,15 @@ domain: "https://melody.dev"
 # Third party services
 # (Anything you put here will be public!)
 google-analytics:
+github: "pixelyunicorn/melody.dev"
+branch: "glitch"
+glitch: "melody"
 
 # Rubygems
 # (The ones used for this site breaks GitHub Pages)
 plugins:
+  - jekyll-archives
+  - jekyll-default-layout
   - jekyll-auto-image
   - jekyll-postfiles
 
@@ -31,3 +36,11 @@ exclude:
 
 # Permalinks
 permalink: /:title/
+
+# Tags
+jekyll-archives:
+  enabled:
+    - tags
+  layout: archive
+  permalinks:
+    tag: '/hashtag/:name/'

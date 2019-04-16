@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Subway Countdown Clocks
 tags: work
 accent: orange

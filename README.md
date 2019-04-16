@@ -6,7 +6,8 @@ Built with Jekyll and hosted on Netlify. (Note: this site is _not_ compatible wi
 
 | Directory |  |
 | --- | --- |
-| ````_posts/```` | List of projects, with assets inside of each folder. |
+| ````_posts/```` | Public list of posts, with assets inside of each folder. |
+| ````_posty/```` | Unlisted list of posts, with assets inside of each folder. |
 
 ### Blog Posts
 

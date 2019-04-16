@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/apw7exh.css">
 
     <!-- import the webpage's javascript file -->
-    <!-- i know i'm a javascript developer, but i forgot to use it for some reason... -->
-    <!-- <script src="/script.js" defer></script> -->
+    <script src="/script.js" defer></script>
 
     <!-- zuckerberg card -->
     <meta property="og:type" content="{% if page.image %}article{% else %}website{% endif %}">
@@ -36,6 +35,9 @@
     <meta name="twitter:image:src" content="{{ page.image | prepend: page.url | prepend: site.domain }}">
     <meta name="twitter:image:alt" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     {% endif %}
+
+    <!-- various meta jawns -->
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
   </head>
   <body>
     <span id="top"></span>

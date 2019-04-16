@@ -1,0 +1,23 @@
+---
+layout: page
+---
+
+<h1>#<yeet>{{ page.title }}</yeet></h1>
+
+<hr>
+
+<blogroll>
+  {% for post in page.posts %}{% unless post.hidden %}
+    <a href="{{ post.url }}" class="bg-{{ post.accent }}">
+      <h3>{{ post.title }}</h3>
+      <p class="metadata">
+        Published {{ post.date | date: "%B %-d, %Y" }} •
+        {% include read-time.html content=post.content %} read
+      </p>
+    </a>
+  {% endunless %}{% endfor %}
+</blogroll>
+
+<hr>
+
+<a href="/" class="button uno">← Back Home</a>

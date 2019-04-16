@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Spook Your Friends with Electron
-tags: talks
+tags: ['talks']
 accent: teal
 tile:
   order: 6

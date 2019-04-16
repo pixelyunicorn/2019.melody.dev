@@ -20,7 +20,7 @@ layout: default
         </tile>
       </tiles>
       <p class="metadata">
-        Published {{ page.date | date: "%B %-d, %Y" }} •
+        {% unless page.hidden %}Published {{ page.date | date: "%B %-d, %Y" }} •{% endunless %}
         {% include read-time.html %} read
       </p>
     </div>
@@ -69,17 +69,25 @@ layout: default
     <p>
       Melody is a web developer, designer, and community event organizer based in Philly. You can find them on Twitter at <a class="uno" href="https://twitter.com/pixelyunicorn" target="_blank"><img src="https://icon.now.sh/twitter/1da1f2" height="12" width="12" /> @pixelyunicorn </a>.
     </p>
-    <!-- <p>
-      Edit on GitHub: {{ page.path }}
-    </p> -->
+    <h3>Share</h3>
+    <p>
+      <a id="share-twitter" href="http://twitter.com/share?text={{ page.title }}&url={{ page.url | prepend: site.domain }}&via=pixelyunicorn&hashtags={% for tag in page.tags %}{{ tag }},{% endfor %}" target="_blank" class="button uno"><img src="https://icon.now.sh/twitter/1da1f2" height="14" width="14" /> Twitter</a>
+      <a id="share-mastodon" href="#share-mastodon" onclick="share_on_mastodon('{{ page.title }}', '{{ page.url | prepend: site.domain }}', '{% for tag in page.tags %}#{{ tag }} {% endfor %}')" class="button uno"><img height="14" width="14" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mastodon.svg" /> Mastodon <noscript>(Please enable Javascript)</noscript></a>
+      <a id="edit-github" href="https://github.com/{{ site.github }}/blob/{{ site.branch }}/{{ page.path }}" target="_blank" class="button uno" ><img src="https://icon.now.sh/github/000" height="14" width="14" /> View on GitHub</a>
+      <!-- <a id="edit-glitch" href="https://glitch.com/edit/#!/{{ site.glitch }}?path={{ page.path }}:1:0" target="_blank" class="button uno">🎏 Glitch</a> -->
+    </p>
     <h3>More Posts</h3>
     <p class="page-nav">
-      {% if page.previous.url %}
+      {% if page.previous %}{% unless page.previous.hidden %}
         <a class="prev uno button" href="{{page.previous.url}}">← {{page.previous.title}}</a>
-      {% endif %}
-      {% if page.next.url %}
+      {% else %}{% if page.previous.previous %}
+        <a class="prev uno button" href="{{page.previous.previous.url}}">← {{page.previous.previous.title}}</a>
+      {% endif %}{% endunless %}{% endif %}
+      {% if page.next %}{% unless page.next.hidden %}
         <a class="next uno button" href="{{page.next.url}}">{{page.next.title}} →</a>
-      {% endif %}
+      {% else %}{% if page.next.next %}
+        <a class="next uno button" href="{{page.next.next.url}}">{{page.next.next.title}} →</a>
+      {% endif %}{% endunless %}{% endif %}
     </p>
   </container>
 </section>

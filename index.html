@@ -5,7 +5,7 @@ image: meta-preview.png
 ---
 
 <h1 id="welcome">
-  {% include icons/welcome.svg size="64" %} Hey hi, I’m <yeet>Melody</yeet>!
+  <span class="hidden-phone">{% include icons/welcome.svg size="64" %}</span> Hey hi, I’m <yeet>Melody</yeet>!
 </h1>
 
 <p class="lead">
@@ -15,7 +15,7 @@ image: meta-preview.png
 {% assign sorted_posts = site.posts | sort: "tile.order" %}
 
 <tiles class="hidden-phone">
-  {% for post in sorted_posts %}
+  {% for post in sorted_posts %}{% unless post.hidden %}
     <a href="{{ post.url }}" class="tile bg-{{ post.accent }} {{ post.tile.class }}" style="
       grid-column: auto / span calc({{ post.tile.width }} + 1 {% if post.tile.left %}+ {{ post.tile.left }}{% endif %});
       grid-row: auto / span calc({{ post.tile.height }} + 1 {% if post.tile.top %}+ {{ post.tile.top}}{% endif %});
@@ -25,13 +25,13 @@ image: meta-preview.png
       <h3><span title="{{ post.title }}" style="background-image: linear-gradient(to right, transparent 50%, {{ post.accent }} 90%);
       ">{{ post.title }}</span></h3>
     </a>
-  {% endfor %}
+  {% endunless %}{% endfor %}
 </tiles>
 
 <blogroll class="visible-phone">
   <h2>Recent Posts</h2>
   <br>
-  {% for post in site.posts %}
+  {% for post in site.posts %}{% unless post.hidden %}
     <a href="{{ post.url }}" class="bg-{{ post.accent }}">
       <h3>{{ post.title }}</h3>
       <p class="metadata">
@@ -39,7 +39,7 @@ image: meta-preview.png
         {% include read-time.html content=post.content %} read
       </p>
     </a>
-  {% endfor %}
+  {% endunless %}{% endfor %}
 </blogroll>
 
 <br>

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Transit Guides
 tags: work
 accent: purple
