@@ -1,6 +1,6 @@
 ---
 title: Transit Guides
-tags: work
+tags: work transit
 accent: purple
 tile:
   order: 3

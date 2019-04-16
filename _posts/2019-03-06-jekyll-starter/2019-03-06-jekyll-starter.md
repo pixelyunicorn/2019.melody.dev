@@ -1,6 +1,6 @@
 ---
 title: Build Your First Jekyll Website
-tags: guides
+tags: guides jekyll
 accent: red
 tile:
   order: 8
