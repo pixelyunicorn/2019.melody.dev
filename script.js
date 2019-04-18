@@ -24,6 +24,20 @@ function toggle_theme(theme) {
 
 set_theme();
 
+// Patreon
+function hide_patreon() {
+  localStorage['patreon_hidden'] = Date.now();
+  set_patreon_visibility();
+}
+
+function set_patreon_visibility() {
+  if (localStorage['patreon_hidden']) {
+    document.getElementById('patreon-beg').remove();
+  }
+}
+
+set_patreon_visibility();
+
 // Mastodon share button
 // From https://www.256kilobytes.com/content/show/4812/how-to-make-a-share-on-mastodon-button-in-pure-vanilla-javascript
 
