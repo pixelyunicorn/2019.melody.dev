@@ -51,3 +51,52 @@ article {
   padding: 1em;
   border-radius: $border-radius;
 }
+
+// Toggle theme
+.toggle-themes {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+}
+body {
+  .toggle-theme-light {
+    display: none;
+  }
+  .toggle-theme-reset {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    .toggle-theme-light {
+      display: inline-block;
+    }
+    .toggle-theme-dark {
+      display: none;
+    }
+  }
+}
+body.force-theme-dark {
+  .toggle-theme-light {
+    display: inline-block!important;
+  }
+  .toggle-theme-dark {
+    display: none!important;
+  }
+  .toggle-theme-reset {
+    display: inline-block!important;
+  }
+}
+body.force-theme-light {
+  .toggle-theme-light {
+    display: none!important;
+  }
+  .toggle-theme-dark {
+    display: inline-block!important;
+  }
+  .toggle-theme-reset {
+    display: inline-block!important;
+  }
+}

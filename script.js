@@ -1,7 +1,28 @@
 // Dark mode
-// COMING SOON!
 
-function dark_mode() {}
+function set_theme() {
+  if (localStorage['theme']) {
+    document.querySelector('body').classList.add('force-theme-'+localStorage['theme']);
+  }
+}
+
+function reset_theme() {
+  localStorage.removeItem('theme');
+  document.querySelector('body').classList.add('animate-theme-change');
+  document.querySelector('body').classList.forEach(className => {
+    if (className.startsWith('force-theme-')) {
+        document.querySelector('body').classList.remove(className);
+    }
+  });
+}
+
+function toggle_theme(theme) {
+  reset_theme();
+  localStorage['theme'] = theme;
+  set_theme();
+}
+
+set_theme();
 
 // Mastodon share button
 // From https://www.256kilobytes.com/content/show/4812/how-to-make-a-share-on-mastodon-button-in-pure-vanilla-javascript

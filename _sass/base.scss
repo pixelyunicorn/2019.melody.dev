@@ -13,14 +13,17 @@ body {
   font-family: $body-font;
   font-size: $font-size;
   margin: 0 auto;
+  &.animate-theme-change {
+    transition: background 500ms ease-in, color 500ms ease-in;
+  }
 }
 
-body, body.force-light-mode {
+body, body.force-theme-light {
   background: $background;
   color: $color;
 }
 
-body.force-dark-mode {
+body.force-theme-dark {
   background: $color;
   color: #ecd1fa; // $background;
 }
