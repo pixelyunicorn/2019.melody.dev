@@ -111,3 +111,38 @@ blockquote {
     transition: none!important;
   }
 }
+
+body, body.force-theme-light {
+  .hidden-theme-dark, .visible-theme-light {
+    visibility: visible;
+    display: inherit;
+  }
+  .hidden-theme-light, .visible-theme-dark {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+body.force-theme-dark {
+  .hidden-theme-dark, .visible-theme-light {
+    visibility: hidden;
+    display: none;
+  }
+  .hidden-theme-light, .visible-theme-dark {
+    visibility: visible;
+    display: inherit;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    .hidden-theme-dark, .visible-theme-light {
+      visibility: hidden;
+      display: none;
+    }
+    .hidden-theme-light, .visible-theme-dark {
+      visibility: visible;
+      display: inherit;
+    }
+  }
+}
