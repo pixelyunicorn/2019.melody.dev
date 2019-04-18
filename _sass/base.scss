@@ -35,6 +35,10 @@ body.force-theme-dark {
   }
 }
 
+header, section, footer {
+  position: relative;
+}
+
 img#welcome {
   vertical-align: sub;
 }

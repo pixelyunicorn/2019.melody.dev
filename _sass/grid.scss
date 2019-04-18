@@ -1,6 +1,7 @@
 // Content Wrapper
 container {
   display: block;
+  position: relative;
   // width: 100%;
   // max-width: -webkit-calc(#{$container-width} - (#{$spacing-unit} * 2));
   // max-width: calc(#{$container-width} - (#{$spacing-unit} * 2));
@@ -9,8 +10,7 @@ container {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
-  position: relative;
-  
+
   clear: both;
   box-sizing: content-box;
 
