@@ -24,7 +24,7 @@ tiles {
     h1, h2, h3 {
       align-self: flex-end;
       margin: 0;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); // , 0 2px 2px rgba(0, 0, 0, 0.55);
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.75); // , 0 2px 2px rgba(0, 0, 0, 0.55);
       span {
         // from https://wesbos.com/css-highlight-animation/
         position: relative;
