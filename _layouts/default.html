@@ -39,7 +39,7 @@
     <!-- various meta jawns -->
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
   </head>
-  <body class="page-{{ page.slug }}">
+  <body class="page-{{ page.slug }} accent-{{ page.accent }}">
     <span id="top"></span>
 {{ content }}
   </body>

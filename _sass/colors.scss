@@ -32,4 +32,12 @@
     background-color: nth($color, 2);
     color: white;
   }
+  .accent-#{nth($color, 1)} {
+    blockquote {
+      background-color: rgba(nth($color, 2), .35);
+    }
+    #main a:not(.uno) {
+      color: darken(nth($color, 2), 5%);
+    }
+  }
 }

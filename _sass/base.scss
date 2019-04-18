@@ -95,6 +95,14 @@ hr {
   margin: 2em 0;
 }
 
+blockquote {
+  margin: 1em 0;
+  padding: 1em 1em 0;
+  border-radius: 0;
+  background: rgba(gray, .35);
+  border-radius: $border-radius;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none!important;
