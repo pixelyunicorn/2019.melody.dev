@@ -1,6 +1,6 @@
 ---
 title: Making Music in React
-tags: guides reactjs
+tags: guides dev reactjs
 accent: blue
 tile:
   order: 2
