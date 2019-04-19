@@ -37,7 +37,7 @@
       background-color: rgba(nth($color, 2), .35);
     }
     #main a:not(.uno) {
-      color: darken(nth($color, 2), 5%);
+      color: lighten(nth($color, 2), 12%);
     }
   }
 }
