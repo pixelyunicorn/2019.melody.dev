@@ -361,7 +361,7 @@ Glitch Effect
 
 https://electronjs.org/docs/api/desktop-capturer
 
-Alt text: A borwser window showing documentation for desktopCapturer in Electron's API
+Alt text: A browser window showing documentation for desktopCapturer in Electron's API
 
 > How this particular glitch effect works, is that it takes a background image and flickers multiple crops of it across the screen. Here’s something I found that will allow us to use a screenshot of the desktop as our background image.
 
@@ -385,7 +385,7 @@ Alt text: A terminal window, with small sections of the windows tinted and shift
 
 Demo time!
 
-Alt text: A terminal window, extremely disorted, completely tinted and shifted around.
+Alt text: A terminal window, extremely distorted, completely tinted and shifted around.
 
 > If you’re feeling woke, you can also have the glitch run recursively! This may result in a memory leak crashing your computer at some point. (This actually did crash my computer!)
 
