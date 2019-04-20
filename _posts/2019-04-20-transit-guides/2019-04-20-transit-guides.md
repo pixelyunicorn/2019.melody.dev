@@ -15,14 +15,14 @@ image: meta-preview.png
 ---
 
 <p class="lead">
-  I created a series of mobile-friendly and printable web-based guides to help college students find their way around the Philadelphia area.
+  I created a series of mobile-friendly and printable web-based guides to help college students find their way around the Philadelphia area on public transit.
 </p>
 
 > Links to guides for participating schools: <a href="https://septayac.com/haverford" target="_blank">Haverford College</a> ♦ <a href="https://septayac.com/brynmawr" target="_blank">Bryn Mawr College</a> ♦ <a href="https://septayac.com/immaculata" target="_blank">Immaculata University</a> ♦ <a href="https://septayac.com/harcum" target="_blank">Harcum College</a> ♦ <a href="https://septayac.com/sju" target="_blank">St. Joseph's University</a> ♦ <a href="https://septayac.com/swarthmore/" target="_blank">Swarthmore College</a> ♦ <a href="https://septayac.com/delval" target="_blank">Delaware Valley University</a> ♦ <a href="https://septayac.com/usciences/" target="_blank">USciences</a> ♦ <a href="https://septayac.com/upenn" target="_blank">UPenn</a>
 
 ---
 
-As part of my advisory role with SEPTA (Southeastern Pennsylvania Transportation Authority), I collaborated with the members of the Youth Advisory Council to update resources distributed to schools in the area. The existing resources consisted of brochures that needed to be individually updated in Microsoft Publisher, and often contained outdated information.
+As part of my advisory role with SEPTA (Southeastern Pennsylvania Transportation Authority), I collaborated with the members of the Youth Advisory Council to update new rider resources distributed to schools in the area. The existing resources consisted of brochures that needed to be individually updated in Microsoft Publisher, and often contained outdated information.
 
 Consulting with students new to the area and/or have never ridden public transit before in small focus groups, I turned these brochures into web-based guides that are digital-first. It put forward resources pertaining to the 3 most commonly asked questions by students:
 
