@@ -32,6 +32,7 @@ layout: page
 <tiles class="hidden-phone">
   {% for post in page.posts %}{% unless post.hidden %}
     <a href="{{ post.url }}" id="tile-{{ post.slug }}" class="tile bg-{{ post.accent }} {{ post.tile.class }}">
+      {% if post.draft %}<span class="draft-banner">COMING SOON</span>{% endif %}
       <h3><span title="{{ post.title }}">{{ post.title }}</span></h3>
     </a>
   {% endunless %}{% endfor %}

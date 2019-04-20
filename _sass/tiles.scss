@@ -10,6 +10,7 @@ tiles {
     grid-column: auto / span 5;
     grid-row: auto / span 5;
     display: flex;
+    position: relative;
     padding: $spacing-unit;
     margin-right: $spacing-unit;
     margin-bottom: $spacing-unit;
@@ -46,6 +47,19 @@ tiles {
           text-shadow: 0 0 10px rgba(50,50,50,.5);
         }
       }
+    }
+    .draft-banner {
+      position: absolute;
+      top: 10px;
+      right: -10px;
+      font-family: $header-font;
+      font-weight: normal;
+      background: #FFEA56;
+      color: black;
+      transform: rotate(25deg);
+      box-shadow: 3px 3px 0 2px rgba(50,50,50,.25);
+      padding: 2px 10px;
+      border-radius: 4px;
     }
     &:hover {
       transform: translateY(-2px);

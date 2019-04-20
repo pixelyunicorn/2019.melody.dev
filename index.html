@@ -49,6 +49,7 @@ image: meta-preview.png
 <tiles class="hidden-phone">
   {% for post in sorted_posts %}{% unless post.hidden %}
     <a href="{{ post.url }}" id="tile-{{ post.slug }}" class="tile bg-{{ post.accent }} {{ post.tile.class }}">
+      {% if post.draft %}<span class="draft-banner">COMING SOON</span>{% endif %}
       <h3><span title="{{ post.title }}">{{ post.title }}</span></h3>
     </a>
   {% endunless %}{% endfor %}
@@ -61,7 +62,9 @@ image: meta-preview.png
     <a href="{{ post.url }}" class="bg-{{ post.accent }}">
       <h3>{{ post.title }}</h3>
       <p class="metadata">
-        Published {{ post.date | date: "%B %-d, %Y" }} •
+        {% unless post.draft %}Published {{ post.date | date: "%B %-d, %Y" }} •{% endunless %}
+        {% if post.draft %}Draft •{% endif %}
+        {% if post.hidden %}Patron Exclusive •{% endif %}
         {% include read-time.html content=post.content %} read
       </p>
     </a>

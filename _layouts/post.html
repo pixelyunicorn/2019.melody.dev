@@ -19,7 +19,9 @@ layout: default
         </tile>
       </tiles>
       <p class="metadata feature-above">
-        {% unless page.hidden %}Published {{ page.date | date: "%B %-d, %Y" }} •{% endunless %}
+        {% if page.hidden %}Patron Exclusive •{% endif %}
+        {% unless page.draft %}Published {{ page.date | date: "%B %-d, %Y" }} •{% endunless %}
+        {% if page.draft %}Draft •{% endif %}
         {% include read-time.html %} read
       </p>
     </div>
@@ -27,7 +29,9 @@ layout: default
       <br class="hidden-phone">
       <h1>{{ page.title }}</h1>
       <p class="metadata">
-        Published {{ page.date | date: "%B %-d, %Y" }} •
+        {% if page.hidden %}Patron Exclusive •{% endif %}
+        {% unless page.draft %}Published {{ page.date | date: "%B %-d, %Y" }} •{% endunless %}
+        {% if page.draft %}Draft •{% endif %}
         {% include read-time.html %} read
       </p>
       <img src="{{ page.feature.image | prepend: page.url }}" alt=""/>
@@ -35,7 +39,9 @@ layout: default
     {% else %}
     <h1>{{ page.title }}</h1>
     <p class="metadata">
-      Published {{ page.date | date: "%B %-d, %Y" }} •
+      {% unless page.draft %}Published {{ page.date | date: "%B %-d, %Y" }} •{% endunless %}
+      {% if page.draft %}Draft •{% endif %}
+      {% if page.hidden %}Patron Exclusive •{% endif %}
       {% include read-time.html %} read
     </p>
     {% if page.image %}<img src="{{ page.image | prepend: page.url }}" />{% endif %}
