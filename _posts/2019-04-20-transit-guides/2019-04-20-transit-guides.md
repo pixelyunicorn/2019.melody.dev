@@ -38,6 +38,8 @@ At the bottom of each guide, there is a card layout that allows information to b
 
 You can even print these pages to generate brochures using your browser's built-in print command. Printed brochures are distributed at information desks and new student orientations at colleges throughout the Philadelphia area.
 
+(A PDF fallback is also provided for browsers that do not support the print layout.)
+
 [Printed guide for Bryn Mawr College: ![print preview](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218%2Ftransit-guides-print-preview.png?1555779821247)](https://pixelyunicorn.github.io/septa-guides/pdf/septa-yac-bryn-mawr-college.pdf)
 
 A [simple YAML file](https://github.com/pixelyunicorn/septa-guides/blob/master/pages/immaculata.md) provides the data for each of the guides. Information such as fares, maps, and walking directions are automatically generated (and kept up to date) based on what is provided in the YAML file. 
