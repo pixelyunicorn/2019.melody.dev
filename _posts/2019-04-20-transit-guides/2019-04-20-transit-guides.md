@@ -30,7 +30,7 @@ Consulting with students new to the area and/or have never ridden public transit
 - How much does it cost? How to I pay?
 - What does the train/bus take me?
 
-![webpage](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218%2Ftransit-guides-header.png?1555779821247)
+[Web guide for Bryn Mawr College: ![webpage](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218%2Ftransit-guides-header.png?1555779821247)](https://pixelyunicorn.github.io/septa-guides/brynmawr/)
 
 At the bottom of each guide, there is a card layout that allows information to be kept up to date between guides. (This is especially important for fare changes or the rollout of new payment methods.)
 
@@ -38,10 +38,9 @@ At the bottom of each guide, there is a card layout that allows information to b
 
 You can even print these pages to generate brochures using your browser's built-in print command. Printed brochures are distributed at information desks and new student orientations at colleges throughout the Philadelphia area.
 
-![print preview](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218%2Ftransit-guides-print-preview.png?1555779821247)
+[Printed guide for Bryn Mawr College: ![print preview](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218%2Ftransit-guides-print-preview.png?1555779821247)](https://pixelyunicorn.github.io/septa-guides/pdf/septa-yac-bryn-mawr-college.pdf)
 
-
-A simple YAML file provides the data for each of the guides. Information such as fares, maps, and walking directions are automatically generated (and kept up to date) based on what is provided in the YAML file. 
+A [simple YAML file](https://github.com/pixelyunicorn/septa-guides/blob/master/pages/immaculata.md) provides the data for each of the guides. Information such as fares, maps, and walking directions are automatically generated (and kept up to date) based on what is provided in the YAML file. 
 
 <blockquote markdown="block">
   
