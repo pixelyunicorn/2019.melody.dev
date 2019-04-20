@@ -2,11 +2,10 @@
   position: relative;
   display: inline-block;
   min-height: $spacing-unit*10;
-  margin-bottom: -3em;
   img {
     width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto -20px;
   }
   tiles {
     position: absolute;

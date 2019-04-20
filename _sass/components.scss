@@ -67,8 +67,8 @@ article {
 .toggle-themes {
   display: inline-block;
   position: absolute;
-  right: .5rem;
-  top: 1rem;
+  top: 1.25rem;
+  right: calc(40px - .5rem); // .5rem;
   text-align: right;
 }
 body {
@@ -77,6 +77,8 @@ body {
   }
   .toggle-theme-reset {
     display: none;
+    transform: scale(0.75);
+    transform-origin: top right;
   }
 }
 @media (prefers-color-scheme: dark) {

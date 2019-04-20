@@ -8,8 +8,6 @@ image: meta-preview.png
   <span class="hidden-phone">{% include icons/welcome.svg size="64" %}</span> Hey hi, I’m <yeet>Melody</yeet>!
 </h1>
 
-{% include toggle-theme.html %}
-
 <p class="lead">
   I’m an interactive web developer, designer, and storyteller. <br class="hidden-phone"> Here's a taste of what I do →
 </p>
@@ -20,6 +18,11 @@ image: meta-preview.png
 {% capture tiles_style %}
 @import "variables";
 @import "mixins";
+
+  tiles {
+    margin-left: 20px;
+    margin-right: -20px;
+  }
 
 {% for post in sorted_posts %}{% unless post.hidden %}
   #tile-{{ post.slug }} {
