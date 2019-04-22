@@ -5,7 +5,7 @@ accent: red
 tile:
   order: 8
   width: 11
-  height: 5
+  height: 6
   image: tile.png
 image: meta-preview.png
 draft: true

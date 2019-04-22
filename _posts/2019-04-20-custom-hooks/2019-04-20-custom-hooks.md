@@ -4,8 +4,8 @@ tags: dev
 accent: purple
 tile:
   order: 12
-  width: 5
-  height: 7
+  width: 6
+  height: 6
 # feature:
 #   width: 15
 #   height: 10
