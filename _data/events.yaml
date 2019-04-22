@@ -4,7 +4,7 @@
   role: speaking
   date: 2019-04-11
   link: https://www.meetup.com/Philadelphia-JavaScript-Developers/events/259967994/
-  topic: 
+  topic: lofi hip hop beats to npm install to
   accent: blue
 - title: Bitcamp
   city: University of Maryland
@@ -26,7 +26,7 @@
   role: speaking
   date: 2019-04-18
   link: https://brooklynjs.org/
-  topic: 
+  topic: lofi hip hop beats to npm install to!
   accent: orange
 - title: "!!Con"
   city: Manhattan
@@ -34,7 +34,7 @@
   date: 2019-05-11
   end: 2019-05-12
   link: http://bangbangcon.com/
-  topic: 
+  topic: lofi hip hop beats to npm install to!!
   accent: purple
 - title: Everfree Northwest
   city: Seattle
@@ -42,15 +42,15 @@
   date: 2019-05-17
   end: 2019-05-19
   link: https://everfreenw.com/
-  topic: 
+  topic: An Absurd Intro to React Hooks (pony edition)
   accent: teal
 - title: CodeDay Virginia
   city: Richmond VA
-  role: speaking
+  role: mentoring
   date: 2019-05-25
   end: 2019-05-26
   link: https://codeday.org/virginia/
-  topic: 
+  topic: Intro to Coding ~ Build Your First Game
   accent: red
 - title: BronyCon
   city: Baltimore
