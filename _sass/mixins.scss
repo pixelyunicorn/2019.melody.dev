@@ -9,6 +9,8 @@
     @content
   }
   @media (prefers-color-scheme: $scheme) {
-    @content
+    body {
+      @content
+    }
   }
 }

@@ -37,8 +37,14 @@
       background-color: rgba(nth($color, 2), .35);
     }
     #main a:not(.uno) {
-      color: lighten(nth($color, 2), 12%);
+      color: darken(nth($color, 2), 2%);
     }
   }
-  
+  @include color-scheme(dark) {
+    &.accent-#{nth($color, 1)} {
+      #main a:not(.uno) {
+        color: lighten(nth($color, 2), 20%);
+      }
+    }
+  }
 }

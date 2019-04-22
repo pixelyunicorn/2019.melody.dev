@@ -1,6 +1,6 @@
 ---
 title: "plural they/them"
-layout: page
+accent: purple
 ---
 
 ## {% include icons/welcome.svg size="38" %} I'm <yeet>Melody,</yeet> one of many in this brain!
