@@ -3,3 +3,12 @@
     @content;
   }
 }
+
+@mixin color-scheme($scheme) {
+  body.force-theme-#{$scheme} {
+    @content
+  }
+  @media (prefers-color-scheme: $scheme) {
+    @content
+  }
+}

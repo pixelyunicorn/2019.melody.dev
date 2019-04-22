@@ -75,12 +75,7 @@ tiles {
     }
   }
 }
-body.force-theme-dark {
-  tiles > a {
-    box-shadow: none!important;
-  }
-}
-@media (prefers-color-scheme: dark) {
+@include color-scheme(dark) {
   tiles > a {
     box-shadow: none!important;
   }

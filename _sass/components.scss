@@ -41,12 +41,7 @@ blogroll {
     color: white!important;
   }
 }
-body.force-theme-dark {
-  blogroll > a {
-    box-shadow: none!important;
-  }
-}
-@media (prefers-color-scheme: dark) {
+@include color-scheme(dark) {
   blogroll > a {
     box-shadow: none!important;
   }

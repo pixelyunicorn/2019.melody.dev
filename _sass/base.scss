@@ -22,17 +22,9 @@ body, body.force-theme-light {
   background: $background;
   color: $color;
 }
-
-body.force-theme-dark {
+@include color-scheme(dark) {
   background: $color;
   color: #ecd1fa; // $background;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: $color;
-    color: #ecd1fa; // $background;
-  }
 }
 
 header, section, footer {
