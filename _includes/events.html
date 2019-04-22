@@ -1,0 +1,56 @@
+<!-- Sort events, credit: https://stackoverflow.com/questions/46779277/how-do-i-compare-date-in-front-matter-to-site-date -->
+{%- assign buildTimeInSecondsInEpoch = site.time | date: "%s" | plus: 0 -%}
+{%- assign futureEvents = "" | split: "" -%}
+{%- assign pastEvents = "" | split: "" -%}
+{%- for event in site.data.events -%}
+  {%- assign eventDateInSecondsInEpoch = event.date | date:"%s" | plus: 0 -%}
+  {%- if eventDateInSecondsInEpoch < buildTimeInSecondsInEpoch -%}
+    {%- assign pastEvents = pastEvents | push: event -%}
+  {%- else -%}
+    {%- assign futureEvents = futureEvents | push: event -%}
+  {%- endif -%}                                                  
+{%- endfor -%}
+{%- assign pastEvents = pastEvents | reverse -%}
+
+<h2 style="margin-bottom: 1em;">
+  Upcoming Events
+</h2>
+
+<blogroll class="events-list">
+{% for event in futureEvents | limit: 10 %}{% if event.date | date: '%F' <= site.time | date: '%F' %}
+  <a href="{{ event.link }}" class="bg-{{ event.accent }}" target="_blank">
+    <h3><span title="{{ event.title }}">{{ event.title }}</span>
+      {% if event.role %}({{ event.role }}!){% endif %}</h3>
+    <p>
+      {% unless event.end %}{{ event.date | date: "%B %-d, %Y" }}
+      {%- else -%}
+        {% if event.date | date: "%-d" == event.end | date: "%-d" %}{{ event.date | date: "%B %-d" }}-{{ event.end | date: "%-d, %Y" }}
+        {% else %}{{ event.date | date: "%B %-d, %Y" }}to {{ event.end | date: "%B %-d, %Y" }}
+      {% endif %}{% endunless %}
+      @ {{ event.city }}
+    </p>
+  </a>
+{% endif %}{% endfor %}
+</blogroll>
+
+<hr>
+<h2 style="margin-bottom: 1em;">
+  Recent Events
+</h2>
+
+<blogroll class="events-list">
+{% for event in pastEvents | reverse | limit: 6 %}{% if event.date | date: '%F' > site.time | date: '%F' %}
+  <a href="{{ event.link }}" class="bg-{{ event.accent }}" target="_blank">
+    <h3><span title="{{ event.title }}">{{ event.title }}</span>
+      {% if event.role %}({{ event.role }}!){% endif %}</h3>
+    <p>
+      {% unless event.end %}{{ event.date | date: "%B %-d, %Y" }}
+      {% else %}
+        {% if event.date | date: "%-d" == event.end | date: "%-d" %}{{ event.date | date: "%B %-d" }}-{{ event.end | date: "%-d, %Y" }}
+        {% else %}{{ event.date | date: "%B %-d, %Y" }}to {{ event.end | date: "%B %-d, %Y" }}
+      {% endif %}{% endunless %}
+      @ {{ event.city }}
+    </p>
+  </a>
+{% endif %}{% endfor %}
+</blogroll>
