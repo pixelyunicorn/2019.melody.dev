@@ -4,6 +4,7 @@
   role: speaking
   date: 2019-04-11
   link: https://www.meetup.com/Philadelphia-JavaScript-Developers/events/259967994/
+  topic: 
   accent: blue
 - title: Bitcamp
   city: University of Maryland
@@ -11,18 +12,21 @@
   date: 2019-04-12
   end: 2019-04-14
   link: https://bit.camp/
+  topic: 
   accent: teal
 - title: RQ React
   city: Philly
   role: 
   date: 2019-04-16
   link: https://www.meetup.com/RQ-React/events/260092298/
+  topic: 
   accent: red
 - title: BrooklynJS
   city: Brooklyn
   role: speaking
   date: 2019-04-18
   link: https://brooklynjs.org/
+  topic: 
   accent: orange
 - title: "!!Con"
   city: Manhattan
@@ -30,6 +34,7 @@
   date: 2019-05-11
   end: 2019-05-12
   link: http://bangbangcon.com/
+  topic: 
   accent: purple
 - title: Everfree Northwest
   city: Seattle
@@ -37,6 +42,7 @@
   date: 2019-05-17
   end: 2019-05-19
   link: https://everfreenw.com/
+  topic: 
   accent: teal
 - title: CodeDay Virginia
   city: Richmond VA
@@ -44,6 +50,7 @@
   date: 2019-05-25
   end: 2019-05-26
   link: https://codeday.org/virginia/
+  topic: 
   accent: red
 - title: BronyCon
   city: Baltimore
@@ -51,4 +58,5 @@
   date: 2019-08-01
   end: 2019-08-04
   link: https://bronycon.org/
+  topic: 
   accent: purple
