@@ -6,7 +6,7 @@ tile:
   order: 2
   width: 5
   height: 10
-  top: 3
+  top: 2
   image: tile.png
 feature:
   width: 17

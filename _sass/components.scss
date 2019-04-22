@@ -77,7 +77,7 @@ body {
   }
   .toggle-theme-reset {
     display: none;
-    transform: scale(0.75);
+    transform: scale(0.75) translateX(-5%);
     transform-origin: top right;
   }
 }
