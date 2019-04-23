@@ -14,7 +14,7 @@ body {
     line-height: 1.5em;
 }
 
-#application {
+#application, div.CodeMirror-lines, div.CodeMirror-sizer {
     background: #331e3e;
     color: #ecd1fa;
 }

@@ -30,15 +30,15 @@ Consulting with students new to the area and/or have never ridden public transit
 - How much does it cost? How to I pay?
 - What does the train/bus take me?
 
-[Web guide for Bryn Mawr College: ![webpage](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218%2Ftransit-guides-header.png?1555779821247)](https://pixelyunicorn.github.io/septa-guides/brynmawr/)
+[Web guide for Bryn Mawr College: ![webpage](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/transit-guides-header.png?1555779821247)](https://pixelyunicorn.github.io/septa-guides/brynmawr/)
 
 At the bottom of each guide, there is a card layout that allows information to be kept up to date between guides. (This is especially important for fare changes or the rollout of new payment methods.)
 
-![card](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218%2Ftransit-guides-card.png?1555789809691)
+![card](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/transit-guides-card.png?1555789809691)
 
 You can even print these pages to generate brochures using your browser's built-in print command. Printed brochures are distributed at information desks and new student orientations at colleges throughout the Philadelphia area.
 
-[Printed guide for Bryn Mawr College: ![print preview](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218%2Ftransit-guides-print-preview.png?1555779821247)](https://pixelyunicorn.github.io/septa-guides/pdf/septa-yac-bryn-mawr-college.pdf)
+[Printed guide for Bryn Mawr College: ![print preview](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/transit-guides-print-preview.png?1555779821247)](https://pixelyunicorn.github.io/septa-guides/pdf/septa-yac-bryn-mawr-college.pdf)
 
 A [simple YAML file](https://github.com/pixelyunicorn/septa-guides/blob/master/pages/immaculata.md) provides the data for each of the guides. Information such as fares, maps, and walking directions are automatically generated (and kept up to date) based on what is provided in the YAML file. 
 
@@ -87,6 +87,6 @@ methods:
 
 Since rolling out these new guides, over 2500+ students have utilized them to find essential information on stops, routes, and fares relevant to their schools!
 
-![person picking up a magnet from a table](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218%2Ftransit-guides-table.jpg?1555790350650)
+![person picking up a magnet from a table](https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/transit-guides-table.jpg?1555790350650)
 
 _(Links to these guides can be found at the top of this post.)_
