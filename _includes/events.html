@@ -3,7 +3,7 @@
 {%- assign futureEvents = "" | split: "" -%}
 {%- assign pastEvents = "" | split: "" -%}
 {%- for event in site.data.events -%}
-  {%- assign eventDateInSecondsInEpoch = event.date | date:"%s" | plus: 0 -%}
+  {%- assign eventDateInSecondsInEpoch = event.date | date: "%s" | plus: 86400 -%}
   {%- if eventDateInSecondsInEpoch < buildTimeInSecondsInEpoch -%}
     {%- assign pastEvents = pastEvents | push: event -%}
   {%- else -%}
