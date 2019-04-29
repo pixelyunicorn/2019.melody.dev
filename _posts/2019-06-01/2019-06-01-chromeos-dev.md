@@ -5,7 +5,6 @@ accent: teal
 tile:
   width: 5
   height: 5
-  image: tile.png
 draft: true
 published: false
 ---
