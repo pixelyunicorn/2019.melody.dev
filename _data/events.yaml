@@ -15,7 +15,7 @@
   topic: 
   accent: teal
 - title: RQ React
-  city: Philly Area
+  city: Philly
   role: 
   date: 2019-04-16
   link: https://www.meetup.com/RQ-React/events/260092298/
@@ -35,7 +35,7 @@
   link: https://www.reddit.com/r/philadelphia/comments/arb9zo/wtf_found_this_in_my_door_this_morning
   accent: red
 - title: "Philly Tech Week"
-  city: Philly
+  city: Philly &amp; the Burbs
   role: 
   date: 2019-05-03
   end: 2019-05-09
@@ -69,7 +69,7 @@
   date: 2019-05-20
   end: 2019-05-21
   link: https://twitter.com/pixelysquid
-  accent: orange
+  accent: teal
 - title: CodeDay Virginia
   city: Richmond VA
   role: mentoring
@@ -79,17 +79,17 @@
   topic: Intro to Coding ~ Build Your First Game
   accent: red
 - title: "Smash 'N' Splash"
-  city: Kalahari Resort near Madison WI
+  city: Kalahari Resort near Madison
   role: commentating/spectating
   date: 2019-05-31
   end: 2019-06-02
   link: https://smash.gg/tournament/smash-n-splash-4/details
   accent: blue
-- title: "Exploring Madison"
-  city: Madison WI
+- title: "Exploring the Midwest"
+  city: Madison or Chicago
   role: "let's meet up"
   date: 2019-06-03
-  end: 2019-06-04
+  end: 2019-06-05
   link: https://twitter.com/pixelyunicorn
   accent: blue
 - title: BronyCon

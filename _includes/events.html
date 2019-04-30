@@ -24,9 +24,12 @@
     <p>
       {% unless event.end %}{{ event.date | date: "%B %-d, %Y" }}
       {%- else -%}
-        {% if event.date | date: "%-d" == event.end | date: "%-d" %}{{ event.date | date: "%B %-d" }}-{{ event.end | date: "%-d, %Y" }}
-        {% else %}{{ event.date | date: "%B %-d, %Y" }}to {{ event.end | date: "%B %-d, %Y" }}
-      {% endif %}{% endunless %}
+        {% assign eventStartMonth = event.date | date: "%B" %}
+        {% assign eventEndMonth = event.end | date: "%B" %}
+        {% if eventStartMonth == eventEndMonth %}{{ event.date | date: "%B %-d" }}-{{ event.end | date: "%-d, %Y" }}
+        {% else %}{{ event.date | date: "%B %-d" }} to {{ event.end | date: "%B %-d, %Y" }}
+      {% endif %}
+      {% endunless %}
       @ {{ event.city }}
     </p>
   </a>
