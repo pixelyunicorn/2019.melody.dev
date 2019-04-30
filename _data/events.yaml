@@ -1,4 +1,4 @@
-# title, role, date, (end), link
+ # title, role, date, (end), link
 - title: Philadelphia JS Developers
   city: Philly
   role: speaking
@@ -15,7 +15,7 @@
   topic: 
   accent: teal
 - title: RQ React
-  city: Philly
+  city: Philly Area
   role: 
   date: 2019-04-16
   link: https://www.meetup.com/RQ-React/events/260092298/
@@ -34,6 +34,13 @@
   date: 2019-04-27
   link: https://www.reddit.com/r/philadelphia/comments/arb9zo/wtf_found_this_in_my_door_this_morning
   accent: red
+- title: "Philly Tech Week"
+  city: Philly
+  role: 
+  date: 2019-05-03
+  end: 2019-05-09
+  link: https://2019.phillytechweek.com/
+  accent: teal
 - title: "!!Con"
   city: Manhattan
   role: speaking
@@ -44,7 +51,7 @@
   accent: purple
 - title: Chilling in Canada
   city: Vancouver BC
-  role: say hi to me
+  role: "say hi to me"
   date: 2019-05-13
   end: 2019-05-16
   link: https://twitter.com/pixelysquid
@@ -58,7 +65,7 @@
   accent: teal
 - title: Chilling in Seattle
   city: Seattle
-  role: "let's meet up!"
+  role: "let's grab a coffee!"
   date: 2019-05-20
   end: 2019-05-21
   link: https://twitter.com/pixelysquid
@@ -72,11 +79,18 @@
   topic: Intro to Coding ~ Build Your First Game
   accent: red
 - title: "Smash 'N' Splash"
-  city: Wisconsin Dells WI
-  role: spectating
+  city: Kalahari Resort near Madison WI
+  role: commentating/spectating
   date: 2019-05-31
   end: 2019-06-02
   link: https://smash.gg/tournament/smash-n-splash-4/details
+  accent: blue
+- title: "Exploring Madison"
+  city: Madison WI
+  role: "let's meet up"
+  date: 2019-06-03
+  end: 2019-06-04
+  link: https://twitter.com/pixelyunicorn
   accent: blue
 - title: BronyCon
   city: Baltimore
