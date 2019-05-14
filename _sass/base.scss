@@ -43,6 +43,9 @@ img, iframe {
 h1, h2, h3, h4 {
   font-family: $header-font;
   margin-bottom: 0;
+  svg {
+    vertical-align: bottom;
+  }
 }
 
 h1 {
@@ -67,6 +70,14 @@ h4 {
   margin-bottom: 1rem;
 }
 
+svg {
+  vertical-align: bottom;
+}
+
+svg.social {
+  vertical-align: baseline;
+}
+
 p {
   max-width: $content-width;
   line-height: 1.5em;
@@ -78,10 +89,6 @@ p {
       font-size: 1.25rem;
     }
   }
-}
-
-svg {
-  vertical-align: bottom;
 }
 
 hr {
