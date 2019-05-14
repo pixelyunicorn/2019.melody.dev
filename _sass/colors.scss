@@ -17,7 +17,7 @@
 
 @include color-scheme(dark) {
   .uno {
-    background-color: ($uno, .2);
+    background-color: rgba($uno, .2);
     color: darken($uno, 20%);
     border-color: $uno;
   }
