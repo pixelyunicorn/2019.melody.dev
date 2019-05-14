@@ -32,7 +32,9 @@ function hide_patreon() {
 
 function set_patreon_visibility() {
   if (localStorage['patreon_hidden']) {
-    document.getElementById('patreon-beg').remove();
+    if (document.getElementById('patreon-beg')) {
+      document.getElementById('patreon-beg').remove();
+    }
   }
 }
 
