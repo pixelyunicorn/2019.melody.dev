@@ -18,7 +18,7 @@
 
 <blogroll class="events-list">
 {% for event in futureEvents | limit: 10 %}{% if event.date | date: '%F' <= site.time | date: '%F' %}
-  <a href="{{ event.link }}" class="bg-{{ event.accent }}" target="_blank">
+  <a href="{{ event.link }}" class="bg-{{ event.accent }}" target="_blank" rel="noreferrer">
     <h3><span title="{{ event.title }}">{{ event.title }}</span>
       {% if event.role %}({{ event.role }}!){% endif %}</h3>
     <p>
@@ -43,7 +43,7 @@
 
 <blogroll class="events-list">
 {% for event in pastEvents | reverse | limit: 6 %}{% if event.date | date: '%F' > site.time | date: '%F' %}
-  <a href="{{ event.link }}" class="bg-{{ event.accent }}" target="_blank">
+  <a href="{{ event.link }}" class="bg-{{ event.accent }}" target="_blank" rel="noreferrer">
     <h3><span title="{{ event.title }}">{{ event.title }}</span>
       {% if event.role %}({{ event.role }}!){% endif %}</h3>
     <p>
