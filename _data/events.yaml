@@ -12,14 +12,14 @@
   date: 2019-04-12
   end: 2019-04-14
   link: https://bit.camp/
-  topic: 
+  topic:
   accent: teal
 - title: RQ React
   city: Philly
-  role: 
+  role:
   date: 2019-04-16
   link: https://www.meetup.com/RQ-React/events/260092298/
-  topic: 
+  topic:
   accent: red
 - title: BrooklynJS
   city: Brooklyn
@@ -36,7 +36,7 @@
   accent: red
 - title: "Philly Tech Week"
   city: Philly &amp; the Burbs
-  role: 
+  role:
   date: 2019-05-03
   end: 2019-05-09
   link: https://2019.phillytechweek.com/
@@ -70,12 +70,12 @@
   end: 2019-05-21
   link: https://twitter.com/pixelysquid
   accent: teal
-- title: CodeDay Virginia
-  city: Richmond VA
+- title: CodeDay Pittsburgh
+  city: Pittsburgh PA
   role: mentoring
   date: 2019-05-25
   end: 2019-05-26
-  link: https://codeday.org/virginia/
+  link: https://codeday.org/pittsburgh/
   topic: Intro to Coding ~ Build Your First Game
   accent: red
 - title: "Smash 'N' Splash"
@@ -98,5 +98,5 @@
   date: 2019-08-01
   end: 2019-08-04
   link: https://bronycon.org/
-  topic: 
+  topic:
   accent: purple
