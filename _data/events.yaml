@@ -14,13 +14,6 @@
   link: https://bit.camp/
   topic:
   accent: teal
-- title: RQ React
-  city: Philly
-  role:
-  date: 2019-04-16
-  link: https://www.meetup.com/RQ-React/events/260092298/
-  topic:
-  accent: red
 - title: BrooklynJS
   city: Brooklyn
   role: speaking
@@ -49,26 +42,12 @@
   link: http://bangbangcon.com/
   topic: lofi hip hop beats to npm install to!!
   accent: purple
-- title: Chilling in Canada
-  city: Vancouver BC
-  role: "say hi to me"
-  date: 2019-05-13
-  end: 2019-05-16
-  link: https://twitter.com/pixelysquid
-  accent: red
 - title: Everfree Northwest
   city: Seattle
   role: speaking
   date: 2019-05-17
   end: 2019-05-19
   link: https://everfreenw.com/
-  accent: teal
-- title: Chilling in Seattle
-  city: Seattle
-  role: "let's grab a coffee!"
-  date: 2019-05-20
-  end: 2019-05-21
-  link: https://twitter.com/pixelysquid
   accent: teal
 - title: CodeDay Pittsburgh
   city: Pittsburgh PA
@@ -84,13 +63,6 @@
   date: 2019-05-31
   end: 2019-06-02
   link: https://smash.gg/tournament/smash-n-splash-4/details
-  accent: blue
-- title: "Exploring the Midwest"
-  city: Madison or Chicago
-  role: "let's meet up"
-  date: 2019-06-03
-  end: 2019-06-05
-  link: https://twitter.com/pixelyunicorn
   accent: blue
 - title: BronyCon
   city: Baltimore
