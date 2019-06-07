@@ -75,9 +75,21 @@ tiles {
     }
   }
 }
+
+@include color-scheme(light) {
+  tiles > a {
+    box-shadow: 0px 10px 20px lightgray;
+    &:hover {
+      box-shadow: 0px 10px 20px darken(lightgray, 10%);
+    }
+  }
+}
 @include color-scheme(dark) {
   tiles > a {
-    box-shadow: none!important;
+    box-shadow: 0px 10px 20px darken($color, 2.5%);
+    &:hover {
+      box-shadow: 0px 10px 20px darken($color, 5%);
+    }
   }
 }
 
