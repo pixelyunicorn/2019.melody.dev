@@ -12,6 +12,7 @@ feature:
   image: ../codeday/feature.png
 image: ../codeday/meta-preview.png
 hidden: true
+assets: "https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/"
 ---
 
 This is a tutorial for people who want to learn to program, and have absolutely
@@ -21,7 +22,7 @@ We’re going to start off, however, not by talking about programming, but rathe
 about one of the people responsible for popularizing it, and his… interesting
 skills. Here’s a video of Bill Gates jumping over a chair:
 
-<iframe width="693" height="520" src="https://www.youtube.com/embed/8TCxE0bWQeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/8TCxE0bWQeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="width:100%; height: 400px" allowfullscreen></iframe>
 
 And just how is this relevant? We’re going to start out our exploration of
 programming by making *Bill Gates Chair Jumper Simulator 2015*.
@@ -52,7 +53,7 @@ Ok, let’s get started making our game. To get started, just launch Construct 3
 Once you’re signed up, let’s create a new project. Just give it a name, and
 leave everything else as default.
 
-![](https://cdn-images-1.medium.com/max/800/1*BHDNzaUU_5VvHqFBgEvezQ.png)
+![]({{https://cdn-images-1.medium.com/max/800/1*BHDNzaUU_5VvHqFBgEvezQ.png}})
 
 FYI, you don’t need to create an account on Construct to use it. However, you DO
 need to have an account with Dropbox, OneDrive, or another online storage
@@ -68,15 +69,15 @@ Let’s quickly break down some of the parts of Construct.
 The largest area with the big white space is the World Map. This is where we’re
 going to be designing our Chair Jumping obstacle course:
 
-![](https://cdn-images-1.medium.com/max/800/0*BwzwWT01nIfNLh9m.png)
+![]({{ page.assets }}gamedev-1-world-map.png)
 
 ### Concepts of Chairs
 
-On the right side of the screen, you’ll also see an “Objects” section. This is
+On the right side of the screen, you’ll also see an “Project” section. This is
 where we’re going to store our concepts of objects, so I’ll actually be
 referring to it as the Concepts section:
 
-![](https://cdn-images-1.medium.com/max/800/0*gSBawY3bEY3yfnMe.png)
+![]({{ page.assets }}gamedev-2-sidebar.png)
 
 Note that I said concepts. If you look around you, you’ll see that, despite the
 fact that there are a bunch of chairs in various places, they all look and act
@@ -92,19 +93,11 @@ you’ll need for this game:
 * Bill Gates (the player)
 * The Ground
 
-### Construct Stuff
-
-Above the Concepts section, you’ll see a Project section with a list of all the
-files in your project. Once we start working with multiple levels, you’ll be
-able to switch between them all here.
-
-![](https://cdn-images-1.medium.com/max/800/0*HQ3M5zJ0nk6uA6dd.png)
-
 ### Properties
 
 Finally, on the far left hand of the screen, you’ll see the Properties section:
 
-![](https://cdn-images-1.medium.com/max/800/0*8bXNfvW8VUALVImE.png)
+![]({{ page.assets }}gamedev-3-properties.png)
 
 We won’t need this right now, but you might eventually find that you’ll want to,
 say, change something about just one instance on the World Map. (For example,
@@ -118,11 +111,13 @@ about it in the Properties section.
 Okay, so let’s go ahead and get started with making our game. We’ll start by
 making some of the concepts we listed earlier.
 
-Right-click in the Concepts section, and click “New”, then select “Sprite” (the
+Right-click anywhere on the white part within the world map, and click “New”, then select “Sprite” (the
 little image of the space invader). Almost everything in our game will be a
 Sprite. Give the sprite a name (“Chair”), and hit Create.
 
-![](https://cdn-images-1.medium.com/max/800/1*pmnc2Sci4dWq1oEir7xpSA.gif)
+![]({{ page.assets }}gamedev-4-insert.png)
+
+![]({{ page.assets }}gamedev-5-sprite.png)
 
 Click somewhere in the World Map to place the first instance of the chair. We
 can create more later by just dragging them from the Concepts section into the
@@ -131,7 +126,7 @@ World Map section.
 It’ll open up an image editor where you can design your chair’s image. Paint
 your chair!
 
-![](https://cdn-images-1.medium.com/max/800/1*uyigRP948HCb-hiSFoMbrg.gif)
+![]({{ page.assets }}gamedev-6-h.png)
 
 When you’re done, hit the “Crop” button, which has an icon like this:
 
@@ -139,6 +134,8 @@ When you’re done, hit the “Crop” button, which has an icon like this:
 
 (This will remove the transparent border from the sides of the chair, otherwise
 the air surrounding the chair will also be considered part of the chair!)
+
+![]({{ page.assets }}gamedev-7-h-done.png)
 
 **Go ahead and make two more concepts: one Sprite for Bill Gates (name it
 “BillGates”), and one Sprite for the ground (it can just be a black
@@ -168,7 +165,9 @@ by clicking on the “+” button and then the name of each:
 character can run and jump, and should fall to the ground.
 * “Scroll To” — tells Construct to make sure the camera follows our guy.
 
-![](https://cdn-images-1.medium.com/max/800/1*r-ob6ElnIm9bA6VWuGRL1A.gif)
+![]({{ page.assets }}gamedev-8-behavior.png)
+
+![]({{ page.assets }}gamedev-9-behavior-window.png)
 
 Great, let’s click that play button again and see how things go:
 
@@ -179,9 +178,9 @@ Okay, *not great*, our guy falls through the ground!
 It looks like we need to tell Construct that the ground is solid. Add the
 behavior called “Solid” to the concept of the ground, and re-run the game:
 
-![](https://cdn-images-1.medium.com/max/800/1*-pU7zKmYkY3TkTBlr32b2w.gif)
+![]({{ page.assets }}gamedev-10-ground-behaviors.png)
 
-Great!
+Great, it works!
 
 ### The Event Sheet
 
@@ -220,7 +219,9 @@ to start completely from scratch so you can customize your game to your liking.
 instead of Platformer.)
 
 FYI — the free version has some limits. You’ll get higher limits for creating a
-free account. If you’re still hitting the limits, just post a message on
+free account.
+
+> If you're atttending CodeDay and still hitting the limits, just post a message on
 chat.srnd.org in #helpdesk and we’ll get you login information for one of our
 accounts.
 
