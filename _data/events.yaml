@@ -1,11 +1,4 @@
  # title, role, date, (end), link
-- title: Philadelphia JS Developers
-  city: Philly
-  role: speaking
-  date: 2019-04-11
-  link: https://www.meetup.com/Philadelphia-JavaScript-Developers/events/259967994/
-  topic: lofi hip hop beats to npm install to
-  accent: blue
 - title: Bitcamp
   city: University of Maryland
   role: speaking
@@ -21,19 +14,6 @@
   link: https://brooklynjs.org/
   topic: lofi hip hop beats to npm install to!
   accent: orange
-- title: Furnace Party
-  city: Vacant Lot by 27th and Girard
-  role: do attend
-  date: 2019-04-27
-  link: https://www.reddit.com/r/philadelphia/comments/arb9zo/wtf_found_this_in_my_door_this_morning
-  accent: red
-- title: "Philly Tech Week"
-  city: Philly &amp; the Burbs
-  role:
-  date: 2019-05-03
-  end: 2019-05-09
-  link: https://2019.phillytechweek.com/
-  accent: teal
 - title: "!!Con"
   city: Manhattan
   role: speaking
@@ -50,7 +30,7 @@
   link: https://everfreenw.com/
   accent: teal
 - title: CodeDay Pittsburgh
-  city: Pittsburgh PA
+  city: Pittsburgh
   role: mentoring
   date: 2019-05-25
   end: 2019-05-26
@@ -59,11 +39,26 @@
   accent: red
 - title: "Smash 'N' Splash"
   city: Kalahari Resort near Madison
-  role: commentating/spectating
+  role: spectating / commentating
   date: 2019-05-31
   end: 2019-06-02
   link: https://smash.gg/tournament/smash-n-splash-4/details
   accent: blue
+- title: Windy Hacks
+  city: Chicago
+  role: mentoring
+  date: 2019-06-22
+  end: 2019-06-23
+  link: https://codeday.org/pittsburgh/
+  topic: Intro to Coding ~ Build Your First Game
+  accent: teal
+- title: Reactadelphia
+  city: Philadelphia
+  role: speaking
+  date: 2019-07-16
+  link: https://www.meetup.com/Reactadelphia/events/262571765/
+  topic: Custom React Hooks
+  accent: red
 - title: BronyCon
   city: Baltimore
   role: speaking
