@@ -21,15 +21,15 @@ Here are some example sentences using my **plural they/them** pronouns, from <a 
 
 ## {% include icons/member-add.svg size="38" %} <yeet>Plural!?</yeet>
 
-Yep, there's more than one of us in this brain! I highly reccomend reading <a href="https://freyasspirit.com/plurality-playbook/" class="uno" target="_blank" rel="noreferrer">Google's Plurality Playbook</a> for context on understanding dissociative disorders, as well as plurality as a whole. Here are some of us you will be seeing around:
+Yep, there's more than one of us in this brain! This is really hard for us to put into words, so I highly reccomend reading <a href="https://freyasspirit.com/plurality-playbook/" class="uno" target="_blank" rel="noreferrer">Google's Plurality Playbook</a> for context on understanding dissociative disorders, as well as plurality as a whole. Here are _some_ of us you will be seeing around:
 
-- 🎶 **Melody** ~ they/them ~ right brain ~ the musical one, slurs voice musically, has the most common sense and primary communicator
+- 🎶+✨ **Melody** ~ they/them ~ right brain ~ primary communicator, has the most common sense, often slurs voice musically for no reason
 
-- 🦌 **valerie** ~ vi/vim or val ~ left brain ~ the lowercase personality, can focus, total nerrrrrrd, tries to be an obnoxiously cute unicorn deerling
+- 🦄+🦌 **valerie** ~ vi/vim or val ~ left brain ~ the lowercase personality, can focus, total nerrrrrrd, tries to be an obnoxiously cute unicorn deerling
 
-- 🔥 **Ambra (amber)** ~ she/her ~ can design and code (aka can make money) 
+- 🐍+🔥 **Ambra (amber)** ~ she/her ~ can design and code (aka make money), the powerhouse of the cell
 
-- 🌿 **Forrest** ~ any pronouns ~ non-verbal, loves tacos and nature, hates chicken
+- 🌿+🌮 **Forrest** ~ they/them ~ non-verbal, loves tacos/burritos and nature, hates chicken
 
 I go into a bit more detail in this <a href="https://twitter.com/pixelyunicorn/status/1095153748354117632" class="uno" target="_blank" rel="noreferrer">Twitter thread</a>. (I will still mostly refer to myself using "I", however "we" will be used in contexts in appropriate.)
 
