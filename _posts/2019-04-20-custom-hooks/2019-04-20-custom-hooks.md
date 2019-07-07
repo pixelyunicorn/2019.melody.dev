@@ -1,7 +1,7 @@
 ---
 title: An Absurd Intro to Custom React Hooks
 tags: dev
-accent: purple
+accent: teal
 tile:
   order: 12
   width: 6

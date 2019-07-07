@@ -24,7 +24,7 @@ image: meta-preview.png
     margin-right: -20px;
   }
 
-{% for post in sorted_posts %}{% unless post.hidden %}
+  {% for post in sorted_posts %}{% unless post.hidden %}{% unless post.tile.order < 0 %}
   #tile-{{ post.slug }} {
     grid-column: auto / span calc({{ post.tile.width }} + 1 {% if post.tile.left %}+ {{ post.tile.left }}{% endif %});
     grid-row: auto / span calc({{ post.tile.height }} + 1 {% if post.tile.top %}+ {{ post.tile.top}}{% endif %});
@@ -42,23 +42,23 @@ image: meta-preview.png
       margin-top: 0;
     }
   }
-{% endunless %}{% endfor %}{% endcapture %}
+{% endunless %}{% endunless %}{% endfor %}{% endcapture %}
 {{ tiles_style | scssify }}
 </style>
 
 <tiles class="hidden-phone">
-  {% for post in sorted_posts %}{% unless post.hidden %}
+  {% for post in sorted_posts %}{% unless post.hidden %}{% unless post.tile.order < 0 %}
     <a href="{{ post.url }}" id="tile-{{ post.slug }}" class="tile bg-{{ post.accent }} {{ post.tile.class }}">
       {% if post.draft %}<span class="draft-banner">COMING SOON</span>{% endif %}
       <h3><span title="{{ post.title }}">{{ post.title }}</span></h3>
     </a>
-  {% endunless %}{% endfor %}
+  {% endunless %}{% endunless %}{% endfor %}
 </tiles>
 
 <blogroll class="visible-phone">
   <h2>Recent Posts</h2>
   <br>
-  {% for post in site.posts %}{% unless post.hidden %}
+  {% for post in site.posts %}{% unless post.hidden %}{% unless post.tile.order < 0 %}
     <a href="{{ post.url }}" class="bg-{{ post.accent }}">
       <h3>{{ post.title }}</h3>
       <p class="metadata">
@@ -68,15 +68,20 @@ image: meta-preview.png
         {% include read-time.html content=post.content %} read
       </p>
     </a>
-  {% endunless %}{% endfor %}
+  {% endunless %}{% endunless %}{% endfor %}
 </blogroll>
 
-<p>
-  Filter by:
+<!-- <p>
+  Filter by hashtag:
   <a class="uno" href="/hashtag/dev">#dev</a>
   <a class="uno" href="/hashtag/design">#design</a>
   <a class="uno" href="/hashtag/talks">#talks</a>
   <a class="uno" href="/hashtag/guides">#guides</a>
+ <a class="uno" href="/hashtag/transit">#transit</a>
+</p> -->
+
+<p>
+  <strong>There's more:</strong> check out my extended <a href="/websites" class="uno">websites</a> and <a class="uno" href="https://dribbble.com/pixelyunicorn" target="_blank" rel="noreferrer"><img role="presentation" src="https://icon.now.sh/dribbble/ea4c89" height="14" width="14" /> design</a> portfolios!
 </p>
 
 <hr>
@@ -95,13 +100,13 @@ image: meta-preview.png
 <p>
   You can find me on
   <a class="uno" href="https://twitter.com/pixelyunicorn" target="_blank" rel="noreferrer"><img role="presentation" src="https://icon.now.sh/twitter/1da1f2" height="14" width="14" /> Twitter</a>,
-  <a class="uno" href="https://github.com/pixelyunicorn" target="_blank" rel="noreferrer"><img role="presentation" src="https://icon.now.sh/github/000" class="visible-theme-light" height="14" width="14" /><img role="presentation" src="https://icon.now.sh/github/fff" class="visible-theme-dark" height="14" width="14" /> GitHub</a>,
-  <a class="uno" href="https://dribbble.com/pixelyunicorn" target="_blank" rel="noreferrer"><img role="presentation" src="https://icon.now.sh/dribbble/ea4c89" height="14" width="14" /> Dribbble</a>, and
-  <a class="uno" href="https://twitch.tv/pixelysquid" target="_blank" rel="noreferrer"><img role="presentation" src="https://icon.now.sh/twitch/6441a5" class="visible-theme-light" height="14" width="14" /><img role="presentation" src="https://icon.now.sh/twitch/b9a3e3" class="visible-theme-dark" height="14" width="14" /> Twitch</a>.
+  <a class="uno" href="https://dribbble.com/pixelyunicorn" target="_blank" rel="noreferrer"><img role="presentation" src="https://icon.now.sh/dribbble/ea4c89" height="14" width="14" /> Dribbble</a>,
+  <a class="uno" href="https://twitch.tv/pixelysquid" target="_blank" rel="noreferrer"><img role="presentation" src="https://icon.now.sh/twitch/6441a5" class="visible-theme-light" height="14" width="14" /><img role="presentation" src="https://icon.now.sh/twitch/b9a3e3" class="visible-theme-dark" height="14" width="14" /> Twitch</a>, and
+    <a class="uno" href="https://github.com/pixelyunicorn" target="_blank" rel="noreferrer"><img role="presentation" src="https://icon.now.sh/github/000" class="visible-theme-light" height="14" width="14" /><img role="presentation" src="https://icon.now.sh/github/fff" class="visible-theme-dark" height="14" width="14" /> GitHub</a>.
 </p>
 
 <p>
-  I also recently launched a <a class="uno" href="https://patreon.com/madebymelody" target="_blank" rel="noreferrer"><img role="presentation" src="https://c5.patreon.com/external/favicon/favicon-16x16.png?v=69kMELnXkB" height="12" width="12" /> Patreon</a> where you can support my work!
+  Love what I do? You can support by work by buying me a taco on <a class="uno" href="https://ko-fi.com/pixely" target="_blank" rel="noreferrer"><img role="presentation" src="https://ko-fi.com/favicon.png" height="12" width="12" /> Ko-Fi</a,> or gain a sneak peek at my work by subscribing via <a class="uno" href="https://patreon.com/madebymelody" target="_blank" rel="noreferrer"><img role="presentation" src="https://c5.patreon.com/external/favicon/favicon-16x16.png?v=69kMELnXkB" height="12" width="12" /> Patreon</a>!
 </p>
 
 <h2>
@@ -110,7 +115,11 @@ image: meta-preview.png
 </h2>
 
 <p>
-  <strong></strong> I am currently available for full time paid work in devrel or webdev. The best way to get in touch with me is thru Twitter DMs. You can also send an email to <yeet>hi</yeet> at <yeet>this domain</yeet>! (No recruiters, thanks!)
+  <em>As of July 7, I am busy with a backlog of freelance work.</em>
+</p>
+
+<p>
+  Within the next few weeks, I will soon be available to apply for full time paid work in devrel or webdev. The best way to get in touch with me is thru Twitter DMs. You can also send an email to <yeet>hi</yeet> at <yeet>this domain</yeet>! (No recruiters, thanks!)
 </p>
 
 <hr>

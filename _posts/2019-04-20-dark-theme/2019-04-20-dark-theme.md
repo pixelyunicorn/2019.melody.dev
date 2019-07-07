@@ -11,6 +11,7 @@ tile:
 #   height: 10
 # image: meta-preview.png
 draft: true
+hidden: true
 ---
 
 Coming Soon!

@@ -1,8 +1,9 @@
 ---
 title: Build your first game
-tags: work hackathon
+tags: guides
 accent: red
 tile:
+  order: -1
   width: 6
   height: 6
   image: ../codeday/tile.png
@@ -11,7 +12,6 @@ feature:
   height: 10
   image: ../codeday/feature.png
 image: ../codeday/meta-preview.png
-hidden: true
 assets: "https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/"
 ---
 
@@ -53,7 +53,7 @@ Ok, let’s get started making our game. To get started, just launch Construct 3
 Once you’re signed up, let’s create a new project. Just give it a name, and
 leave everything else as default.
 
-![]({{https://cdn-images-1.medium.com/max/800/1*BHDNzaUU_5VvHqFBgEvezQ.png}})
+![](https://cdn-images-1.medium.com/max/800/1*BHDNzaUU_5VvHqFBgEvezQ.png)
 
 FYI, you don’t need to create an account on Construct to use it. However, you DO
 need to have an account with Dropbox, OneDrive, or another online storage
