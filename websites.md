@@ -7,11 +7,13 @@ accent: purple
 
 Here are some more rad websites I worked on:
 
-- [Colin McMillen](https://famicol.in/)
-- [Everfree Northwest 2018](https://2018.everfreenw.com/)
+- [Colin McMillen](https://famicol.in/) ~~ [tweet thread about design process](https://mobile.twitter.com/pixelyunicorn/status/1125536908673716225)
+- [Everfree Northwest 2018](https://2018.everfreenw.com/) ~~ [case study](https://2019.melody.cool/efnw)
 - [SEPTA System Status](/septa)
-- [Early 2019 Portfolio Website (w/ more case studies!)](https://2019.melody.cool)
-- [Late 2018 Portfolio Website](https://2018.melody.cool)
+- [Hack Club](https://web.archive.org/web/20171101000000*/hackclub.com) ~~ [case study](https://2019.melody.cool/hackclub)
+- [TacoJS](https://tacojs.github.io) (lead organizer) ~~ [case study](https://2019.melody.cool/tacojs)
+- [Late 2018 Portfolio Website](https://2019.melody.cool)
+- [Early 2018 Portfolio Website](https://2018.melody.cool)
 
 (This is not all - a longer, more detailed list is coming in the near future!)
 
