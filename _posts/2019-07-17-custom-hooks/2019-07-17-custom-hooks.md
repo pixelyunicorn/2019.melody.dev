@@ -1,5 +1,6 @@
 ---
 title: Visual Intro to Custom React Hooks
+excerpt: "Here's a lightning talk I gave at Reactadelphia on when, why, and how to use custom react hooks (without showing a single line of code!)"
 tags: dev reactjs
 accent: blue
 tile:
@@ -17,7 +18,7 @@ image: meta-preview.png
 
 > Heya! I am currently working on a more detailed blog post w/ text descriptions, hang tight! In the meantime, you can find my slides below:
 
-Here's a lightning talk I gave at **Reactadelphia July 2019** about when, why, and how to use custom react hooks without showing a single line of code.
+Here's a lightning talk I gave at **Reactadelphia July 2019** about when, why, and how to use custom react hooks (without showing a single line of code!)
 
 <script async class="speakerdeck-embed" data-id="64cb3c0a70754bb9970226d940088e12" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
