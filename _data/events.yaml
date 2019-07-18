@@ -66,4 +66,19 @@
   end: 2019-08-04
   link: https://bronycon.org/
   topic:
+  accent: blue
+- title: Hackcon
+  city: Poconos
+  role: speaking
+  date: 2019-08-21
+  end: 2019-08-23
+  link: https://hackcon.mlh.io/
+  topic:
+  accent: teal
+- title: Transit Techies
+  city: Manhattan
+  role: speaking
+  date: 2019-09-04
+  link: https://transittechies.nyc/
+  topic:
   accent: purple
