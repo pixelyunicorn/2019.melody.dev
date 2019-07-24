@@ -90,3 +90,4 @@ function share_on_mastodon(title, url, hashtags) {
 }
 
 console.log('%c Hi there, nerd!! ', 'background: #41264F; color: #ECD1FA; font-size: 20px;');
+
