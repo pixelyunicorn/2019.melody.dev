@@ -9,19 +9,19 @@
   }
 }
 
-// .uno {
-//   background-color: lighten(rgba($zeo, .2), 15%);
-//   color: darken($zeo, 20%);
-//   border-color: $zeo;
-// }
-
-// @include color-scheme(dark) {
   .uno {
     background-color: rgba($uno, .2);
-    color: darken($uno, 20%);
+    color: darken($uno, 10%);
     border-color: $uno;
   }
-// }
+
+@include color-scheme(dark) {
+  .uno {
+    background-color: rgba(240, 117, 199, 0.2); // rgba($uno, .2);
+    color: $uno;
+    border-color: $uno;
+  }
+}
 
 .duo {
   background-color: rgba($duo, .2);
