@@ -227,14 +227,14 @@ grid, .grid {
 
 @for $i from 1 through 6 {
   [column-count="#{$i}"] {
-    grid-template-columns: repeat(#{$i}, 1fr);
+    grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
   }
 }
 
 @include media-query($on-tablet) {
   @for $i from 1 through 6 {
     [tablet-column-count="#{$i}"] {
-      grid-template-columns: repeat(#{$i}, 1fr);
+      grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
     }
   }
 }
@@ -243,7 +243,7 @@ grid, .grid {
 @include media-query($on-phone) {
   @for $i from 1 through 6 {
     [phone-column-count="#{$i}"] {
-      grid-template-columns: repeat(#{$i}, 1fr);
+      grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
     }
   }
 }
