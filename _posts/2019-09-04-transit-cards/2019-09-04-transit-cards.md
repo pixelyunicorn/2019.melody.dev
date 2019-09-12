@@ -3,7 +3,7 @@ title: "Let's Talk Transit Cards!"
 tags: talks design transit
 accent: teal
 tile:
-  order: 24
+  order: 10
   width: 6
   height: 6
   image: tile.png
