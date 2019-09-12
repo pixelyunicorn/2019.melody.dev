@@ -3,7 +3,7 @@ title: Spook Your Friends with Electron
 tags: talks dev borojs
 accent: teal
 tile:
-  order: 6
+  order: 7
   width: 6
   height: 6
   image: tile.png
