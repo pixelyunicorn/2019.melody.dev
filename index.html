@@ -50,7 +50,7 @@ image: meta-preview.png
 {{ tiles_style | scssify }}
 </style>
 
-<tiles class="">
+<tiles class="posts">
   {% for post in sorted_posts %}{% unless post.hidden %}{% unless post.tile.order < 0 %}
     <a href="{{ post.url }}" id="tile-{{ post.slug }}" class="tile bg-{{ post.accent }} {{ post.tile.class }}">
       {% if post.draft %}<span class="draft-banner"><span class="hidden-phone">COMING </span>SOON!</span>{% endif %}

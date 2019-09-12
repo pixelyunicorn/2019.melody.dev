@@ -73,48 +73,52 @@ tiles {
         }
       }
     }
-    @include media-query(1095px) {
-      grid-column: auto / span 7 !important;
-      grid-row: auto / span 7 !important;
-      margin-left: 0 !important;
-      margin-top: 0 !important;
-    }
+  }
+  &.posts {
     @include media-query($on-phone) {
-      grid-column: auto / span 4 !important;
-      grid-row: auto / span 6 !important;
-      padding: 0;
-      margin-bottom: $spacing-unit*3;
-      h3 {
-        align-self: initial;
-        margin-top: $spacing-unit*3 !important;
-        text-shadow: none;
-        font-size: 1em;
-        padding-top: .5em;
-        color: $color;
-      }
+      grid-template-columns: repeat(12, 40px [col-start]);
     }
     @include media-query(489px) {
-      grid-column: auto / span 3 !important;
-      grid-row: auto / span 5 !important;
-      padding: 0;
-      /* margin-bottom: $spacing-unit*3; */
-      margin-right: 20px !important;
-      margin-bottom: 94px !important;
-      h3 {
-        font-size: .85em;
-        margin-top: 104px !important;
-        padding-top: .35em;
+      grid-template-columns: repeat(9, 40px [col-start]);
+    }
+    @include media-query(349px) {
+      grid-template-columns: repeat(auto-fill, 40px [col-start]);
+    }
+    tile, & > a {
+      @include media-query(1095px) {
+        grid-column: auto / span 7 !important;
+        grid-row: auto / span 7 !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+      }
+      @include media-query($on-phone) {
+        grid-column: auto / span 4 !important;
+        grid-row: auto / span 6 !important;
+        padding: 0;
+        margin-bottom: $spacing-unit*3;
+        h3 {
+          align-self: initial;
+          margin-top: $spacing-unit*3 !important;
+          text-shadow: none;
+          font-size: 1em;
+          padding-top: .5em;
+          color: $color;
+        }
+      }
+      @include media-query(489px) {
+        grid-column: auto / span 3 !important;
+        grid-row: auto / span 5 !important;
+        padding: 0;
+        /* margin-bottom: $spacing-unit*3; */
+        margin-right: 20px !important;
+        margin-bottom: 94px !important;
+        h3 {
+          font-size: .85em;
+          margin-top: 104px !important;
+          padding-top: .35em;
+        }
       }
     }
-  }
-  @include media-query($on-phone) {
-    grid-template-columns: repeat(12, 40px [col-start]);
-  }
-  @include media-query(489px) {
-    grid-template-columns: repeat(9, 40px [col-start]);
-  }
-  @include media-query(349px) {
-    grid-template-columns: repeat(auto-fill, 40px [col-start]);
   }
 }
 

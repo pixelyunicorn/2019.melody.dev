@@ -239,7 +239,6 @@ grid, .grid {
   }
 }
 
-
 @include media-query($on-phone) {
   @for $i from 1 through 6 {
     [phone-column-count="#{$i}"] {
@@ -247,7 +246,6 @@ grid, .grid {
     }
   }
 }
-
 
 @for $i from 1 through 6 {
   [row-count="#{$i}"] {
@@ -262,7 +260,6 @@ grid, .grid {
     }
   }
 }
-
 
 @include media-query($on-phone) {
   @for $i from 1 through 6 {
