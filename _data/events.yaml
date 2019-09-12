@@ -82,7 +82,7 @@
   link: https://transittechies.nyc/
   topic:
   accent: purple
-- title: Strangeloop
+- title: StrangeLoop + PWL Conf + Zines
   city: St. Louis
   role: attending
   date: 2019-09-11
@@ -90,3 +90,10 @@
   link: https://www.thestrangeloop.com
   topic:
   accent: green
+- title: QueerJS
+  city: NYC
+  role: speaking
+  date: 2019-11-02
+  link: https://queerjs.com/new-york/
+  topic:
+  accent: red
