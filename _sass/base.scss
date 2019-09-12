@@ -50,6 +50,9 @@ h1 {
   @include media-query($on-tablet) {
     font-size: 2.5rem;
   }
+  @include media-query($on-phone) {
+    margin-block-start: 0.5em;
+  }
 }
 
 h2 {

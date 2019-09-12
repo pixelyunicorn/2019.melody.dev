@@ -22,6 +22,10 @@ image: meta-preview.png
   tiles {
     margin-left: 20px;
     margin-right: -20px;
+    @include media-query($on-phone) {
+      margin-left: 0;
+      margin-right: -20px;
+    }
   }
 
   {% for post in sorted_posts %}{% unless post.hidden %}{% unless post.tile.order < 0 %}
@@ -35,27 +39,27 @@ image: meta-preview.png
     h3 span {
       background-image: linear-gradient(to right, transparent 50%, lighten({{ post.accent }}, 15%) 90%);
     }
-    @include media-query(1095px) {
-      grid-column: auto / span 7;
-      grid-row: auto / span 7;
+    @include media-query(1319px) {
+      grid-column: auto / span calc({{ post.tile.width }} + 1);
+      /* grid-row: auto / span calc({{ post.tile.height }} + 1); */
       margin-left: 0;
-      margin-top: 0;
+      /* margin-top: 0; */
     }
   }
 {% endunless %}{% endunless %}{% endfor %}{% endcapture %}
 {{ tiles_style | scssify }}
 </style>
 
-<tiles class="hidden-phone">
+<tiles class="">
   {% for post in sorted_posts %}{% unless post.hidden %}{% unless post.tile.order < 0 %}
     <a href="{{ post.url }}" id="tile-{{ post.slug }}" class="tile bg-{{ post.accent }} {{ post.tile.class }}">
-      {% if post.draft %}<span class="draft-banner">COMING SOON</span>{% endif %}
+      {% if post.draft %}<span class="draft-banner"><span class="hidden-phone">COMING </span>SOON!</span>{% endif %}
       <h3><span title="{{ post.title }}">{{ post.title }}</span></h3>
     </a>
   {% endunless %}{% endunless %}{% endfor %}
 </tiles>
 
-<blogroll class="visible-phone">
+<!-- <blogroll class="visible-phone">
   <h2>Recent Posts</h2>
   <br>
   {% for post in site.posts %}{% unless post.hidden %}{% unless post.tile.order < 0 %}
@@ -69,7 +73,7 @@ image: meta-preview.png
       </p>
     </a>
   {% endunless %}{% endunless %}{% endfor %}
-</blogroll>
+</blogroll> -->
 
 <!-- <p>
   Filter by hashtag:

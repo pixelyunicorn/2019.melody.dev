@@ -48,9 +48,7 @@ layout: default
     {% endif %}
 </header>
 <section id="main">
-  <div class="hidden-tablet">
-    {% include toggle-theme.html %}
-  </div>
+  {% include toggle-theme.html class="hidden-tablet" %}
   <container width="content-width">
     <article>
       {% if page.draft == true %}

@@ -79,6 +79,10 @@ ul.events-list {
   top: 1.25rem;
   right: calc(40px - .5rem); // .5rem;
   text-align: right;
+  @include media-query($on-phone) {
+    top: .5rem;
+    right: .5rem;
+  }
 }
 body {
   .toggle-theme-light {
@@ -108,7 +112,7 @@ body.force-theme-dark {
     display: none!important;
   }
   .toggle-theme-reset {
-    display: inline-block!important;
+    display: inline-block;
   }
 }
 body.force-theme-light {
@@ -119,6 +123,6 @@ body.force-theme-light {
     display: inline-block!important;
   }
   .toggle-theme-reset {
-    display: inline-block!important;
+    display: inline-block;
   }
 }
