@@ -1,9 +1,9 @@
 ---
 title: Dark Theming the Web
 tags: dev
-accent: teal
+accent: purple
 tile:
-  order: 11
+  order: 17
   width: 5
   height: 5
 # feature:
@@ -11,7 +11,6 @@ tile:
 #   height: 10
 # image: meta-preview.png
 draft: true
-hidden: true
 ---
 
 Coming Soon!
