@@ -1,99 +1,16 @@
  # title, role, date, (end), link
-- title: Bitcamp
-  city: University of Maryland
-  role: speaking
-  date: 2019-04-12
-  end: 2019-04-14
-  link: https://bit.camp/
-  topic:
-  accent: teal
-- title: BrooklynJS
-  city: Brooklyn
-  role: speaking
-  date: 2019-04-18
-  link: https://brooklynjs.org/
-  topic: lofi hip hop beats to npm install to!
-  accent: orange
-- title: "!!Con"
-  city: Manhattan
-  role: speaking
-  date: 2019-05-11
-  end: 2019-05-12
-  link: http://bangbangcon.com/
-  topic: lofi hip hop beats to npm install to!!
-  accent: purple
-- title: Everfree Northwest
-  city: Seattle
-  role: speaking
-  date: 2019-05-17
-  end: 2019-05-19
-  link: https://everfreenw.com/
-  accent: teal
-- title: CodeDay Pittsburgh
-  city: Pittsburgh
-  role: mentoring
-  date: 2019-05-25
-  end: 2019-05-26
-  link: https://codeday.org/pittsburgh/
-  topic: Intro to Coding ~ Build Your First Game
-  accent: red
-- title: "Smash 'N' Splash"
-  city: Kalahari Resort near Madison
-  role: spectating / commentating
-  date: 2019-05-31
-  end: 2019-06-02
-  link: https://smash.gg/tournament/smash-n-splash-4/details
-  accent: blue
-- title: Windy Hacks
-  city: Chicago
-  role: mentoring
-  date: 2019-06-22
-  end: 2019-06-23
-  link: https://codeday.org/pittsburgh/
-  topic: Intro to Coding ~ Build Your First Game
-  accent: teal
-- title: Reactadelphia
-  city: Philadelphia
-  role: speaking
-  date: 2019-07-16
-  link: https://www.meetup.com/Reactadelphia/events/262571765/
-  topic: Custom React Hooks
-  accent: red
-- title: BronyCon
-  city: Baltimore
-  role: speaking
-  date: 2019-08-01
-  end: 2019-08-04
-  link: https://bronycon.org/
-  topic:
-  accent: blue
-- title: Hackcon
-  city: Poconos
-  role: speaking
-  date: 2019-08-21
-  end: 2019-08-23
-  link: https://hackcon.mlh.io/
-  topic:
-  accent: teal
-- title: Transit Techies
-  city: Manhattan
-  role: speaking
-  date: 2019-09-04
-  link: https://transittechies.nyc/
-  topic:
-  accent: purple
-- title: StrangeLoop + PWL Conf + Zines
-  city: St. Louis
-  role: attending
-  date: 2019-09-11
-  end: 2019-09-15
-  link: https://www.thestrangeloop.com
-  topic:
-  accent: green
 - title: QueerJS
-  city: NYC
-  role: speaking
+  city: Manhattan, NYC
+  role: organising
   date: 2019-11-02
   link: https://queerjs.com/new-york/
+  topic:
+  accent: purple
+- title: CodeDay
+  city: Brooklyn, NYC
+  role: organising
+  date: 2019-11-09
+  end: 2019-11-10
+  link: https://codeday.org/ny/
   topic:
   accent: red
