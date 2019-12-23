@@ -1,5 +1,5 @@
 ---
-title: Build Your First Jekyll Website
+title: Build Your First Website!
 tags: guides dev jekyll
 accent: red
 tile:
@@ -8,6 +8,7 @@ tile:
   height: 5
   image: tile.svg
 image: meta-preview.png
+redirect_from: /website
 draft: true
 ---
 

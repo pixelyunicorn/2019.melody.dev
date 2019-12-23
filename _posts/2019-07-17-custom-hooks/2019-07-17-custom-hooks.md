@@ -14,6 +14,7 @@ feature:
   height: 14
   image: feature.svg
 image: meta-preview.png
+redirect_from: /react
 ---
 
 Here's a lightning talk I gave at **Reactadelphia July 2019** about when, why, and how to use custom react hooks (without showing a single line of code!)

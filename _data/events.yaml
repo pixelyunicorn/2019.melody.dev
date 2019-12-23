@@ -1,16 +1,8 @@
- # title, role, date, (end), link
-- title: QueerJS
-  city: Manhattan, NYC
-  role: organising
-  date: 2019-11-02
-  link: https://queerjs.com/new-york/
-  topic:
-  accent: purple
-- title: CodeDay
-  city: Brooklyn, NYC
-  role: organising
-  date: 2019-11-09
-  end: 2019-11-10
-  link: https://codeday.org/ny/
-  topic:
-  accent: red
+# title, role, date, (end), link
+# - title: QueerJS
+#   city: Manhattan, NYC
+#   role: organising
+#   date: 2019-11-02
+#   link: https://queerjs.com/new-york/
+#   topic:
+#   accent: purple
