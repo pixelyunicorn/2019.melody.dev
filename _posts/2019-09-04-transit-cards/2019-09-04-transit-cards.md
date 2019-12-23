@@ -15,7 +15,7 @@ image: meta-preview.png
 assets: https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/
 ---
 
-Here's a talk I gave at **Transit Techies NYC #10** about some of the cool things I am working on in the realm of transit.
+Here's a talk I gave at **Transit Techies NYC #10** about some of the cool things I am working on in the realm of transit. 💳📲
 
 I couldn't decided what I wanted to speak about, so I covered 3 topics: youth advocacy, the story of philly's cards, and how anything can be a transit card!
 

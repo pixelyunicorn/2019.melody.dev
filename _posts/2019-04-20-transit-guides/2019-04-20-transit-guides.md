@@ -14,9 +14,7 @@ feature:
 image: meta-preview.png
 ---
 
-<p class="lead">
-  I created a series of mobile-friendly and printable web-based guides to help college students find their way around the Philadelphia area on public transit.
-</p>
+I created a series of mobile-friendly and printable web-based guides to help college students find their way around the Philadelphia area on public transit. 🚈🚌🚎🚋
 
 > Links to guides for participating schools: <a href="https://septayac.com/haverford" target="_blank" rel="noreferrer">Haverford College</a> ♦ <a href="https://septayac.com/brynmawr" target="_blank" rel="noreferrer">Bryn Mawr College</a> ♦ <a href="https://septayac.com/immaculata" target="_blank" rel="noreferrer">Immaculata University</a> ♦ <a href="https://septayac.com/harcum" target="_blank" rel="noreferrer">Harcum College</a> ♦ <a href="https://septayac.com/sju" target="_blank" rel="noreferrer">St. Joseph's University</a> ♦ <a href="https://septayac.com/swarthmore/" target="_blank" rel="noreferrer">Swarthmore College</a> ♦ <a href="https://septayac.com/delval" target="_blank" rel="noreferrer">Delaware Valley University</a> ♦ <a href="https://septayac.com/usciences/" target="_blank" rel="noreferrer">USciences</a> ♦ <a href="https://septayac.com/upenn" target="_blank" rel="noreferrer">UPenn</a>
 

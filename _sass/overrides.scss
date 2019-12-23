@@ -15,3 +15,7 @@
     max-height: initial;
   }
 }
+
+container[width="content-width"] article p:first-of-type {
+  @extend p, .lead;
+}

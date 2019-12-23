@@ -14,14 +14,14 @@ feature:
 image: meta-preview.png
 ---
 
-Here's a fun talk I gave at **BrooklynJS October 2018** about simple pranks you can pull off with Electron.js, a javascript package that lets you run webpages as cross-platform desktop apps! You can find code for the slides at <a href="https://github.com/pixelyunicorn/spooky-electron-apps" class="uno" target="_blank" rel="noreferrer"><img src="https://icon.now.sh/github/000" height="12" width="12" /> pixelyunicorn/spooky-electron-apps</a>.
-
+Here's a fun talk I gave at **BrooklynJS October 2018** about simple pranks you can pull off with Electron.js, a javascript package that lets you run webpages as cross-platform desktop apps! ⚡️👻⚡️
 
 <script async class="speakerdeck-embed" data-id="eae6bd1c5be84926ad99c5989ff422ec" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## Links & Resources
 
 - [Slides on speakerdeck](https://speakerdeck.com/pixely/spooking-your-friends-with-electron-brooklynjs-number-59)
+- [Code on GitHub](https://github.com/pixelyunicorn/spooky-electron-apps)
 - [ElectronJS website](https://electronjs.org)
 
 ---

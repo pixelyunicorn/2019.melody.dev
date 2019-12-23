@@ -12,6 +12,8 @@ redirect_from: /website
 draft: true
 ---
 
+Hello!
+
 ## Why static sites?
 
 Static sites provide web developers and content creators with a lower maintenance and more secure way to create a website. This works by generating HTML files that can be hosted on any web server, and because
