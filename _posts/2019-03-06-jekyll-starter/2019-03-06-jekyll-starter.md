@@ -6,7 +6,7 @@ tile:
   order: 8
   width: 11
   height: 5
-  image: tile.png
+  image: tile.svg
 image: meta-preview.png
 draft: true
 ---

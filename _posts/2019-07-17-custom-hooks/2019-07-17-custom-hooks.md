@@ -8,11 +8,11 @@ tile:
   width: 5
   height: 10
   top: 2
-  image: tile.png
+  image: tile.svg
 feature:
   width: 17
   height: 14
-  image: feature.png
+  image: feature.svg
 image: meta-preview.png
 ---
 

@@ -8,8 +8,8 @@
   }
 }
 
-.page-ie6 {
-  .feature img[src*="svg"] {
+.page-ie6, .page-splatoon {
+  .feature img, .feature img[src*="svg"] {
     width: 100vw;
     height: auto;
     max-height: initial;
