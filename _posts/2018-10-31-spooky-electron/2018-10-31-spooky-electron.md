@@ -28,7 +28,7 @@ Here's a fun talk I gave at **BrooklynJS October 2018** about simple pranks you 
 
 ## Text version w/ image descriptions
 
-A text version of the slides with image descriptions can also be found here: <a href="https://github.com/pixelyunicorn/spooky-electron-apps/tree/master/slides" class="uno" target="_blank" rel="noreferrer"><img src="https://icon.now.sh/github/000" height="12" width="12" /> pixelyunicorn/spooky-electron-apps/slides/readme.md</a>.
+A text version of the slides with image descriptions can also be found here: <a href="https://github.com/pixelyunicorn/spooky-electron-apps/tree/master/slides" class="uno" target="_blank" rel="noreferrer"><img src="https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/icon-github-000.svg" height="12" width="12" /> pixelyunicorn/spooky-electron-apps/slides/readme.md</a>.
 
 ### Slide 1
 
