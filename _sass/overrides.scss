@@ -7,3 +7,11 @@
     color: black;
   }
 }
+
+.page-ie6 {
+  .feature img[src*="svg"] {
+    width: 100vw;
+    height: auto;
+    max-height: initial;
+  }
+}

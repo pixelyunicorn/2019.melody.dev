@@ -6,11 +6,11 @@ tile:
   order: 10
   width: 5
   height: 7
-  image: tile.png
+  image: tile.svg
 feature:
   width: 16
   height: 11
-  image: feature.png
+  image: feature.svg
 image: meta-preview.png
 draft: true
 ---
