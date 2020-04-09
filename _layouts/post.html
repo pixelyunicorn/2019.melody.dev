@@ -50,16 +50,16 @@ layout: default
 <section id="main">
   {% include toggle-theme.html class="hidden-tablet" %}
   <container width="content-width">
-    <article>
+    <article class="coming-soon">
       {% if page.draft == true %}
         {% include construction.html %}
-        <p style="text-align: center; opacity: 0.5; margin-top: 2rem;">
+        <p>
            {% include icons/welcome.svg size="128" %}
         </p>
-        <h1 style="text-align: center; opacity: 0.5; margin-top: 0">
+        <h1>
           Nothing here yet!
         </h1>
-        <p style="text-align: center; opacity: 0.5; margin-bottom: 3rem;">
+        <p >
           <em>(I'm probably still writing content for this page. Please check back later.)</em>
         </p>
       {% else %}
@@ -72,14 +72,14 @@ layout: default
   <container width="content-width">
     <hr>
     <h3>About Melody</h3>
-    <img src="/media/avatar.png" alt="Photo of Melody!" width="100" height="100" title="Melody's profile picture!" style="float: left; margin-right: 1ch"/>
+    <img src="/media/avatar.png" alt="Photo of Melody!" width="100" height="100" title="Melody's profile picture!"/>
     <p>
       Melody is a web developer, designer, and community event organizer based in Philly. You can find them on Twitter at <a class="uno" href="https://twitter.com/pixelyunicorn" target="_blank" rel="noreferrer"><img role="presentation" src="https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/icon-twitter.svg" height="12" width="12" /> @pixelyunicorn </a>.
     </p>
     <br>
     <h3>Tags &amp; Sharing</h3>
     <p>
-      {% for tag in page.tags %}<a href="/hashtag/{{ tag }}" class="button uno" >#{{ tag }}</a>{% endfor %}
+      {% for tag in page.tags %}<a href="/hashtag/{{ tag }}" class="button uno" >#{{ tag }}</a> {% endfor %}
       <br>
       <a id="share-mastodon" href="#share-mastodon" onclick="share_on_mastodon('{{ page.title }}', '{{ page.url | prepend: site.domain }}', '{% for tag in page.tags %}#{{ tag }} {% endfor %}')" class="button uno"><img role="presentation" src="https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/icon-mastodon-000.svg" class="visible-theme-light" height="14" width="14" /><img role="presentation" src="https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/icon-mastodon-fff.svg" class="visible-theme-dark" height="14" width="14" /> Mastodon <noscript>(Please enable Javascript)</noscript></a>
       <a id="share-twitter" href="http://twitter.com/share?text={{ page.title }}&url={{ page.url | prepend: site.domain }}&via=pixelyunicorn&hashtags={% for tag in page.tags %}{{ tag }},{% endfor %}" target="_blank" rel="noreferrer" class="button uno"><img role="presentation" src="https://cdn.glitch.com/2d246102-8341-4166-a220-b39d607c9218/icon-twitter.svg" height="14" width="14" /> Twitter</a>

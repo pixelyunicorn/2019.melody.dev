@@ -126,3 +126,29 @@ body.force-theme-light {
     display: inline-block;
   }
 }
+
+// Coming Soon
+.coming-soon {
+  opacity: .5;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  h1 {
+    margin-top: 0;
+  }
+}
+
+// Patreon Beg
+#patreon-beg {
+  .button {
+    color: currentColor;
+  }
+}
+
+// Plug / Bio
+#plug {
+  img.headshot {
+    float: left;
+    margin-left: 1ch;
+  }
+}
