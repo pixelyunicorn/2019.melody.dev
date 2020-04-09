@@ -50,18 +50,9 @@ layout: default
 <section id="main">
   {% include toggle-theme.html class="hidden-tablet" %}
   <container width="content-width">
-    <article class="coming-soon">
+    <article>
       {% if page.draft == true %}
         {% include construction.html %}
-        <p>
-           {% include icons/welcome.svg size="128" %}
-        </p>
-        <h1>
-          Nothing here yet!
-        </h1>
-        <p >
-          <em>(I'm probably still writing content for this page. Please check back later.)</em>
-        </p>
       {% else %}
         {{ content }}
       {% endif %}
