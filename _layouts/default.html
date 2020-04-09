@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="https://cdn.glitch.com/cac749b9-a651-4b28-900e-eab82ca322d7/squiddo.png?1551146813375">
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -41,6 +41,11 @@
   </head>
   <body class="{% if page.slug %}page-{{ page.slug }} {% endif %}{% if page.accent %}accent-{{ page.accent }} {% endif %}">
     <span id="top"></span>
+    <p>Happy <a href="https://css-naked-day.github.io" target="_blank">CSS Naked Day</a>! 😳</p>
+    <p>
+      For the next 48 hours, I've removed my stylesheets to give you a sense of what my website looks like without it, and to highlight the importance of semantic markup for accessibility + usability. Enjoy! 
+    </p><p>—Melody ✨</p>
+    <hr/>
 {{ content }}
     <script>if(navigator.doNotTrack != 1 && document.title != "four-hundred-and-four") { document.write('<img src="https://sapphic-squid-adalytics.glitch.me/counter.png?fallback=melody.dev&color=black" alt="" style="vertical-align: bottom;" width="1" height="1" aria-hidden="true" />'); }</script>
   </body>

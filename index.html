@@ -14,7 +14,7 @@ image: meta-preview.png
 
 {% assign sorted_posts = site.posts | sort: "tile.order" %}
 
-<style>
+<!-- <style>
 {% capture tiles_style %}
 @import "variables";
 @import "mixins";
@@ -48,13 +48,13 @@ image: meta-preview.png
   }
 {% endunless %}{% endunless %}{% endfor %}{% endcapture %}
 {{ tiles_style | scssify }}
-</style>
+</style> -->
 
 <tiles class="posts">
   {% for post in sorted_posts %}{% unless post.hidden %}{% unless post.tile.order < 0 %}
     <a href="{{ post.url }}" id="tile-{{ post.slug }}" class="tile bg-{{ post.accent }} {{ post.tile.class }}">
-      {% if post.draft %}<span class="draft-banner"><span class="hidden-phone">COMING </span>SOON!</span>{% endif %}
       <h3><span title="{{ post.title }}">{{ post.title }}</span></h3>
+      {% if post.draft %}<span class="draft-banner"><span class="hidden-phone">COMING </span>SOON!</span>{% endif %}
     </a>
   {% endunless %}{% endunless %}{% endfor %}
 </tiles>

@@ -6,7 +6,7 @@ layout: page
 
 <hr>
 
-<style>
+<!-- <style>
 {% capture tiles_style %}
 @import "variables";
 @import "mixins";
@@ -33,13 +33,13 @@ layout: page
   }
 {% endunless %}{% endfor %}{% endcapture %}
 {{ tiles_style | scssify }}
-</style>
+</style> -->
 
 <tiles class="posts">
   {% for post in page.posts %}{% unless post.hidden %}
     <a href="{{ post.url }}" id="tile-{{ post.slug }}" class="tile bg-{{ post.accent }} {{ post.tile.class }}">
-      {% if post.draft %}<span class="draft-banner">COMING SOON</span>{% endif %}
       <h3><span title="{{ post.title }}">{{ post.title }}</span></h3>
+      {% if post.draft %}<span class="draft-banner">COMING SOON</span>{% endif %}
     </a>
   {% endunless %}{% endfor %}
 </tiles>
