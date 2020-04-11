@@ -6,7 +6,7 @@ layout: page
 
 <hr>
 
-<!-- <style>
+<style>
 {% capture tiles_style %}
 @import "variables";
 @import "mixins";
@@ -33,7 +33,7 @@ layout: page
   }
 {% endunless %}{% endfor %}{% endcapture %}
 {{ tiles_style | scssify }}
-</style> -->
+</style>
 
 <tiles class="posts">
   {% for post in page.posts %}{% unless post.hidden %}
