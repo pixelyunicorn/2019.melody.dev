@@ -3,7 +3,7 @@ title: Alex Hillman
 tags: dev design
 accent: gray
 tile:
-  order: 10
+  order: -1
   width: 5
   height: 7
   image: tile.svg

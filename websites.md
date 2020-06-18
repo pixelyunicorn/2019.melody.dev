@@ -7,7 +7,7 @@ accent: purple
 
 Here are some more rad websites I worked on:
 
-- [Wizard Zines](https://http://wizardzines.com)
+- [Wizard Zines](https://wizardzines.com)
 - [Alex Hillman](https://dangerouslyawesome.com)
 - [Colin McMillen](https://famicol.in/) ~~ [tweet thread about design process](https://mobile.twitter.com/pixelyunicorn/status/1125536908673716225)
 - [Adulting.dev (logo + website)](https://twitter.com/pixelyunicorn/status/1171577440034074626) ~~ [tweet thread about design process](https://mobile.twitter.com/pixelyunicorn/status/1125536908673716225)

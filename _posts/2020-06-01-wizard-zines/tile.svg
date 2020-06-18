@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="280px" viewBox="0 0 200 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ie6</title>
+    <g id="Illustrations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wizard-zines" transform="translate(-200.000000, -40.000000)" fill-rule="nonzero" stroke="#000000" stroke-width="1.5">
+            <g id="Group-3" transform="translate(426.123059, 125.788440) scale(-1, 1) rotate(-32.000000) translate(-426.123059, -125.788440) translate(320.623059, 51.788440)">
+                <polygon id="Path" fill="#FFFFFF" transform="translate(113.188242, 75.735004) rotate(16.000000) translate(-113.188242, -75.735004) " points="26.4434818 26.5455257 34.1790132 125.130391 199.933003 124.92364 191.522339 26.3396173"></polygon>
+                <polygon id="Path" fill="#FFFFFF" transform="translate(110.143520, 74.578163) rotate(16.000000) translate(-110.143520, -74.578163) " points="23.3987599 25.3886846 31.1343061 123.97355 196.888281 123.766799 188.477601 25.1827761"></polygon>
+                <polygon id="Path" fill="#FFFFFF" transform="translate(106.598221, 73.854238) rotate(16.000000) translate(-106.598221, -73.854238) " points="19.8534603 24.6647601 27.5890094 123.249625 193.342981 123.042874 184.932298 24.4588517"></polygon>
+                <polygon id="Path" fill="#D0BCEA" transform="translate(101.472642, 72.391438) rotate(16.000000) translate(-101.472642, -72.391438) " points="10.7977004 121.327485 18.8510854 23.1967983 192.147584 23.4565327 183.388999 121.586078"></polygon>
+            </g>
+            <g id="Group-1" transform="translate(235.500000, 90.910962) rotate(-50.000000) translate(-235.500000, -90.910962) translate(135.000000, 17.910962)">
+                <polygon id="Path" fill="#FFFFFF" transform="translate(107.720151, 75.345195) rotate(18.000000) translate(-107.720151, -75.345195) " points="24.9416681 28.3718059 32.4269038 122.334537 190.498634 122.318518 182.369556 28.355852"></polygon>
+                <polygon id="Path" fill="#FFFFFF" transform="translate(104.237132, 74.771146) rotate(18.000000) translate(-104.237132, -74.771146) " points="21.4586494 27.7977568 28.9438992 121.760488 187.015615 121.744469 178.886522 27.781803"></polygon>
+                <polygon id="Path" fill="#FFFFFF" transform="translate(101.531442, 73.335054) rotate(18.000000) translate(-101.531442, -73.335054) " points="18.7529586 26.3616656 26.2382113 120.324397 184.309924 120.308378 176.180829 26.3457118"></polygon>
+                <polygon id="Path" fill="#FFE1E1" transform="translate(96.718000, 71.771613) rotate(18.000000) translate(-96.718000, -71.771613) " points="10.3150494 118.310466 17.886088 24.7978232 183.120951 25.2346182 174.877518 118.745403"></polygon>
+            </g>
+            <g id="Group-2" transform="translate(105.000000, 90.910962)">
+                <polygon id="Path" fill="#FFFFFF" transform="translate(141.582178, 71.722672) rotate(-14.000000) translate(-141.582178, -71.722672) " points="52.3286206 21.0510978 60.4335324 122.35136 230.835735 122.394245 222.036758 21.0938088"></polygon>
+                <polygon id="Path" fill="#FFFFFF" transform="translate(137.805772, 71.819522) rotate(-14.000000) translate(-137.805772, -71.819522) " points="48.5522149 21.147948 56.657142 122.44821 227.059329 122.491096 218.260336 21.190659"></polygon>
+                <polygon id="Path" fill="#FFFFFF" transform="translate(134.689641, 73.351512) rotate(-14.000000) translate(-134.689641, -73.351512) " points="45.4360836 22.679938 53.5410137 123.9802 223.943198 124.023085 215.144201 22.722649"></polygon>
+                <polygon id="Path" fill="#FFF4D6" transform="translate(115.277569, 73.978664) rotate(-14.000000) translate(-115.277569, -73.978664) " points="8.47429908 120.506679 43.4403746 26.9190066 222.080839 27.4529088 186.387817 121.038322"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
