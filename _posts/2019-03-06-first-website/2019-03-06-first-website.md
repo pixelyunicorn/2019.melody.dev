@@ -7,7 +7,7 @@ tile:
   width: 11
   height: 5
   image: tile.svg
-image: meta-preview.png
+image: https://cdn.glitch.com/d3e253ff-871d-442c-988d-a70ce0de1dc3/first-website-meta-preview.png
 redirect_from: /website
 draft: true
 ---

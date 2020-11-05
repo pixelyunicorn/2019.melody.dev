@@ -11,7 +11,7 @@ feature:
   width: 17
   height: 9
   image: feature.svg
-image: meta-preview.png
+image: https://cdn.glitch.com/d3e253ff-871d-442c-988d-a70ce0de1dc3/transit-guides-meta-preview.png?v=1604549022913
 ---
 
 I created a series of mobile-friendly and printable web-based guides to help college students find their way around the Philadelphia area on public transit. 🚈🚌🚎🚋
